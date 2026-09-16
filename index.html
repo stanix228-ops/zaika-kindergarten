@@ -1,0 +1,1909 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Частные билингвальные детские сады «ЗАЙКА» в Алматы — Сеть детских садов с концепцией развития</title>
+  <meta name="description" content="Частные детские сады ЗАЙКА в Алматы. 5 филиалов в Бостандыкском, Ауэзовском и Алмалинском районах. Английский Step by Step, собственные бассейны, соляные шахты, 5-разовое питание, гос. ваучеры DamuBala со скидкой 50 000 ₸ в месяц.">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sspink: {
+              DEFAULT: '#F24469',
+              hover: '#D83155',
+              light: '#FDF0F3'
+            },
+            ssnavy: {
+              DEFAULT: '#002855',
+              light: '#003D7A',
+              dark: '#071E3D'
+            },
+            ssgold: '#FFB300',
+            ssgreen: '#00A86B',
+            ssaqua: '#00B4D8'
+          },
+          fontFamily: {
+            main: ['Montserrat', 'sans-serif'],
+            text: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Leaflet CSS & JS for Interactive Map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Sun School Inspired Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐰</text></svg>">
+</head>
+<body class="bg-[#F9F8F5] text-[#1D2530] antialiased">
+
+  <!-- =========================================================================
+       1. ВЕРХНЯЯ СТРОКА (ИНФО И КОНТАКТЫ КАК В SUN SCHOOL)
+       ========================================================================= -->
+  <header class="bg-white border-b border-[#E8E5DD] sticky top-0 z-40 transition-all">
+    
+    <!-- Верхний служебный ряд -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 border-b border-slate-100 hidden md:flex items-center justify-between text-xs">
+      <div class="flex items-center gap-6 text-slate-500 font-medium">
+        <span class="flex items-center gap-1.5 text-[#002855] font-bold">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-[#F24469]"></i>
+          <span>Ваш город: <b>Алматы</b> (5 филиалов)</span>
+        </span>
+        <span>Пн – Пт: 07:30 – 19:00 (дежурная группа до 20:00)</span>
+      </div>
+
+      <div class="flex items-center gap-5">
+        <a href="https://wa.me/77001360606" target="_blank" class="flex items-center gap-1.5 text-emerald-600 font-bold hover:underline">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>WhatsApp администратора</span>
+        </a>
+        <a href="https://www.instagram.com/zaikasadik.kz" target="_blank" class="flex items-center gap-1.5 text-pink-600 font-bold hover:underline">
+          <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+          <span>@zaikasadik.kz</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Основная шапка с логотипом и кнопками -->
+    <!-- Основная шапка с логотипом и кнопками -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 gap-3 xl:gap-6">
+        
+        <!-- Логотип в стиле Sun School -->
+        <a href="#" class="flex items-center gap-2.5 shrink-0">
+          <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-white flex items-center justify-center shadow-sm overflow-hidden border-2 border-pink-200 shrink-0">
+            <img src="images/zaika_mascot.jpg" alt="Логотип Зайка" class="w-full h-full object-cover">
+          </div>
+          <div class="shrink-0">
+            <div class="flex items-center gap-1.5">
+              <span class="text-xl sm:text-2xl font-black tracking-tight text-[#002855] leading-none">ЗАЙКА</span>
+              <span class="text-[9px] font-extrabold uppercase px-1.5 py-0.5 bg-[#FDF0F3] text-[#F24469] rounded-md border border-[#F24469]/20 leading-none">KIDS</span>
+            </div>
+            <p class="text-[10px] sm:text-[11px] text-slate-500 font-semibold mt-0.5 whitespace-nowrap">Сеть частных детских садов</p>
+          </div>
+        </a>
+
+        <!-- Навигация (Desktop) -->
+        <nav class="hidden lg:flex items-center gap-3 xl:gap-5 text-[11px] xl:text-xs font-bold uppercase tracking-wider text-[#002855] whitespace-nowrap">
+          <a href="#chooseKindergarten" class="hover:text-[#F24469] transition">Филиалы</a>
+          <a href="#about" class="hover:text-[#F24469] transition">О садах</a>
+          <a href="#abc" class="hover:text-[#F24469] transition">Концепция ABC</a>
+          <a href="#calculator" class="hover:text-[#F24469] transition">Гос. ваучер</a>
+          <a href="#stocks" class="hover:text-[#F24469] transition">Акции</a>
+          <button onclick="openModal('modal-menu')" class="hover:text-[#F24469] transition">Меню</button>
+          <button onclick="openModal('modal-schedule')" class="hover:text-[#F24469] transition">Распорядок</button>
+          <a href="#reviews" class="hover:text-[#F24469] transition hidden 2xl:inline-block">Отзывы</a>
+          <a href="#contacts" class="hover:text-[#F24469] transition">Контакты</a>
+        </nav>
+
+        <!-- Телефон и кнопки в стиле Sun School -->
+        <div class="hidden sm:flex items-center gap-2.5 xl:gap-3 shrink-0">
+          <div class="text-right hidden xl:block shrink-0">
+            <a href="tel:+77001360606" class="text-sm font-black text-[#002855] hover:text-[#F24469] transition whitespace-nowrap block">
+              +7 700 136 06 06
+            </a>
+            <span class="text-[10px] text-slate-400 block font-medium whitespace-nowrap">Бесплатно по Алматы</span>
+          </div>
+
+          <button onclick="openModal('modal-callback')" class="b-btn b-btn_pinkPrimary px-3.5 py-2 text-xs font-bold shrink-0 whitespace-nowrap">
+            <span>Заказать звонок</span>
+          </button>
+
+          <button onclick="openTourModal()" class="b-btn b-btn_pink px-4.5 py-2 text-xs font-bold shadow-md shrink-0 whitespace-nowrap">
+            <span>Записаться</span>
+          </button>
+        </div>
+
+        <!-- Мобильная кнопка -->
+        <div class="lg:hidden flex items-center gap-2 shrink-0">
+          <button onclick="openTourModal()" class="b-btn b-btn_pink px-3 py-1.5 text-xs font-bold whitespace-nowrap">
+            Записаться
+          </button>
+          <button id="mobile-menu-btn" class="p-2 text-slate-700 hover:text-[#F24469] rounded-xl hover:bg-slate-100 transition">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Мобильное меню -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-5 space-y-3">
+      <a href="#chooseKindergarten" class="block text-slate-700 font-bold text-sm py-1">Филиалы на карте (5)</a>
+      <a href="#about" class="block text-slate-700 font-bold text-sm py-1">О садах «Зайка»</a>
+      <a href="#abc" class="block text-slate-700 font-bold text-sm py-1">Концепция развития ABC</a>
+      <a href="#calculator" class="block text-slate-700 font-bold text-sm py-1">Калькулятор гос. ваучера</a>
+      <a href="#stocks" class="block text-slate-700 font-bold text-sm py-1">Акции и скидки</a>
+      <div class="grid grid-cols-2 gap-2 pt-2">
+        <button onclick="openModal('modal-menu')" class="py-2.5 px-3 bg-slate-100 rounded-xl font-bold text-xs text-slate-700 text-left">
+          🍲 5-разовое Меню
+        </button>
+        <button onclick="openModal('modal-schedule')" class="py-2.5 px-3 bg-slate-100 rounded-xl font-bold text-xs text-slate-700 text-left">
+          ⏰ Распорядок дня
+        </button>
+      </div>
+      <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+        <a href="tel:+77001360606" class="text-sm font-bold text-[#F24469]">+7 700 136 06 06</a>
+        <a href="https://www.instagram.com/zaikasadik.kz" target="_blank" class="text-xs font-bold text-pink-600 flex items-center gap-1.5 hover:underline">
+          <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+          <span>@zaikasadik.kz</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- =========================================================================
+       2. ГЛАВНЫЙ ЭКРАН В СТИЛЕ SUN SCHOOL (HERO POSTER С ПИЛЮЛЯМИ)
+       ========================================================================= -->
+  <!-- =========================================================================
+       2. ГЛАВНЫЙ ЭКРАН В СТИЛЕ SUN SCHOOL С ПАСТЕЛЬНЫМ ФОНОМ И МАСКОТОМ ЗАЙКИ
+       ========================================================================= -->
+  <section class="zaika-hero-bg relative text-[#1D2530] py-12 md:py-20 overflow-hidden border-b border-[#E8E5DD]">
+    <!-- Мягкие световые акценты -->
+    <div class="absolute -top-20 -right-20 w-80 h-80 bg-pink-300/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-20 -left-20 w-80 h-80 bg-cyan-300/20 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Панель быстрых якорных ссылок Sun School -->
+      <div class="hidden md:flex items-center justify-center gap-2 mb-10 overflow-x-auto pb-2">
+        <a href="#chooseKindergarten" class="px-4 py-2 rounded-full bg-white/90 hover:bg-white text-xs font-bold text-[#002855] shadow-sm border border-slate-200/80 transition">Детские сады в Алматы</a>
+        <a href="#about" class="px-4 py-2 rounded-full bg-white/90 hover:bg-white text-xs font-bold text-[#002855] shadow-sm border border-slate-200/80 transition">О садах</a>
+        <a href="#abc" class="px-4 py-2 rounded-full bg-white/90 hover:bg-white text-xs font-bold text-[#002855] shadow-sm border border-slate-200/80 transition">Концепция ABC</a>
+        <a href="#calculator" class="px-4 py-2 rounded-full bg-white/90 hover:bg-white text-xs font-bold text-[#002855] shadow-sm border border-slate-200/80 transition">Гос. ваучер</a>
+        <a href="#stocks" class="px-4 py-2 rounded-full bg-white/90 hover:bg-white text-xs font-bold text-[#002855] shadow-sm border border-slate-200/80 transition">Акции</a>
+        <a href="#reviews" class="px-4 py-2 rounded-full bg-white/90 hover:bg-white text-xs font-bold text-[#002855] shadow-sm border border-slate-200/80 transition">Отзывы</a>
+        <button onclick="openModal('modal-menu')" class="px-4 py-2 rounded-full bg-white/90 hover:bg-white text-xs font-bold text-[#002855] shadow-sm border border-slate-200/80 transition">Питание</button>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+        
+        <!-- Левая колонка: УТП и призывы к действию -->
+        <div class="lg:col-span-7 space-y-6 text-left">
+          
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/95 shadow-sm border border-pink-200/80 text-xs font-extrabold text-[#F24469]">
+            <span>🐰</span>
+            <span>Лицензированная сеть частных детских садов в Алматы</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-5xl lg:text-5xl xl:text-6xl font-black tracking-tight text-[#002855] leading-[1.12]">
+            Частные детские сады <br>
+            <span class="text-[#F24469]">«ЗАЙКА»</span> в Алматы
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-700 font-medium max-w-xl leading-relaxed">
+            Сеть билингвальных садов с авторской концепцией развития ABC, бассейнами, соляными шахтами, нейроподходом и государственными ваучерами DamuBala со скидкой <b class="text-[#002855] underline decoration-[#F24469]">50 000 ₸</b> в месяц.
+          </p>
+
+          <!-- Фирменные бейджи преимуществ Sun School (.b-featureList) -->
+          <div class="flex flex-wrap gap-2.5 pt-2">
+            <div class="flex items-center gap-2 px-3.5 py-2 rounded-full bg-white/90 shadow-sm border border-slate-200/70 text-xs font-bold text-[#002855]">
+              <svg class="w-4 h-4 text-[#00A86B]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+              <span>Гос. аттестация №1</span>
+            </div>
+
+            <div class="flex items-center gap-2 px-3.5 py-2 rounded-full bg-white/90 shadow-sm border border-slate-200/70 text-xs font-bold text-[#002855]">
+              <span class="text-amber-500">★</span>
+              <span>Концепция ABC</span>
+            </div>
+
+            <div class="flex items-center gap-2 px-3.5 py-2 rounded-full bg-white/90 shadow-sm border border-slate-200/70 text-xs font-bold text-[#002855]">
+              <span>🇬🇧</span>
+              <span>Английский Step by Step</span>
+            </div>
+
+            <div class="flex items-center gap-2 px-3.5 py-2 rounded-full bg-white/90 shadow-sm border border-slate-200/70 text-xs font-bold text-[#002855]">
+              <span>🏊</span>
+              <span>Бассейны и соляные шахты</span>
+            </div>
+
+            <div class="flex items-center gap-2 px-3.5 py-2 rounded-full bg-white/90 shadow-sm border border-slate-200/70 text-xs font-bold text-[#002855]">
+              <svg class="w-4 h-4 text-[#00B4D8]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+              <span>Видеонаблюдение онлайн</span>
+            </div>
+
+            <div class="flex items-center gap-2 px-3.5 py-2 rounded-full bg-white/90 shadow-sm border border-slate-200/70 text-xs font-bold text-[#002855]">
+              <span>🧠</span>
+              <span>Нейроподход и Shichida</span>
+            </div>
+          </div>
+
+          <!-- Кнопки действий Sun School -->
+          <div class="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+            <a href="#chooseKindergarten" class="b-btn b-btn_pink px-8 py-4 text-sm sm:text-base font-black text-center shadow-xl">
+              <span>Выбрать детский сад</span>
+            </a>
+            <button onclick="openTourModal()" class="b-btn b-btn_pinkPrimary px-7 py-4 text-sm sm:text-base font-black shadow-sm">
+              <span>Записаться на экскурсию</span>
+            </button>
+          </div>
+
+          <div class="flex items-center gap-4 pt-1 text-xs text-slate-500 font-semibold">
+            <span class="flex items-center gap-1.5 text-emerald-600 font-bold">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+              Набор в группы открыт
+            </span>
+            <span>•</span>
+            <span>Для деток от 1.5 до 7 лет</span>
+          </div>
+
+        </div>
+
+        <!-- Правая колонка: Большой видимый 3D маскот Зайка на сказочном фоне -->
+        <div class="lg:col-span-5 flex justify-center relative">
+          <div class="relative w-full max-w-lg animate-float-mascot flex flex-col items-center">
+            
+            <!-- Большой маскот Зайка без обрезающей рамки -->
+            <div class="relative w-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white/90 bg-gradient-to-b from-amber-50 to-emerald-50">
+              <img src="images/zaika_mascot_big.jpg" alt="Большой маскот сети Зайка" class="w-full h-auto max-h-[520px] object-cover object-center">
+              
+              <!-- Плавающий верхний бейдж 2ГИС -->
+              <div class="absolute top-4 right-4 bg-white/95 backdrop-blur-md px-3.5 py-1.5 rounded-full shadow-lg border border-slate-100 flex items-center gap-1.5 text-xs font-black text-[#002855]">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                <span class="text-amber-500">★ 4.9</span>
+                <span class="text-slate-400">|</span>
+                <span class="text-emerald-700 font-extrabold">2GIS</span>
+              </div>
+
+              <!-- Верхний левый бейдж сети -->
+              <div class="absolute top-4 left-4 bg-[#002855]/85 backdrop-blur-md px-3.5 py-1.5 rounded-full shadow-lg text-white flex items-center gap-1.5 text-[11px] font-extrabold">
+                <span>🐰</span>
+                <span>Маскот сети «Зайка»</span>
+              </div>
+
+              <!-- Нижний бейдж слогана и субсидии -->
+              <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-3.5 rounded-2xl shadow-xl border border-pink-100 flex items-center justify-between gap-2">
+                <div>
+                  <div class="flex items-center gap-1 text-[11px] font-black text-[#F24469]">
+                    <span>♡</span> <span>Счастливое детство начинается здесь!</span>
+                  </div>
+                  <span class="text-[10px] font-bold text-slate-500">Субсидия DamuBala 50 000 ₸/мес</span>
+                </div>
+                <button onclick="openTourModal('Главный баннер')" class="px-4 py-2 rounded-full bg-[#F24469] hover:bg-[#D83155] text-white text-xs font-bold transition shadow-sm shrink-0">
+                  Записаться →
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       3. СЕКЦИЯ: О САДАХ (ПРЕИМУЩЕСТВА С ФОТО В СТИЛЕ SUN SCHOOL)
+       ========================================================================= -->
+  <section id="about" class="py-16 md:py-24 bg-white/70 backdrop-blur-md border-y border-[#E8E5DD]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-2xl sm:text-4xl font-black text-[#002855] tracking-tight">
+          О садах сети «ЗАЙКА»
+        </h2>
+        <p class="text-slate-500 text-sm sm:text-base mt-2">
+          Европейские стандарты безопасности, развития и комфорта для каждого ребенка
+        </p>
+      </div>
+
+      <!-- Сетка 7 преимуществ как в Sun School (.b-benefitsKindergarten) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Преимущество 1: Англоязычная среда -->
+        <div class="bg-white rounded-3xl p-5 border border-[#E8E5DD] hover:border-pink-200 hover:shadow-xl transition-all duration-300 flex flex-col justify-between space-y-4">
+          <div class="space-y-4">
+            <div class="relative h-48 sm:h-52 w-full rounded-2xl overflow-hidden group bg-amber-50 shadow-inner border border-slate-200/60">
+              <img src="images/feature_english.jpg" alt="Англоязычная среда" class="w-full h-full object-cover group-hover:scale-108 transition duration-700 ease-out">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-black/5"></div>
+              
+              <!-- Верхние плавающие бейджи -->
+              <div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-full bg-white/95 backdrop-blur-sm text-[10px] font-black uppercase tracking-wider text-[#F24469] shadow-xs">
+                  Step by Step
+                </span>
+                <span class="px-2.5 py-1 rounded-full bg-white/95 backdrop-blur-sm text-[10px] font-black text-slate-700 shadow-xs">
+                  с 3 лет
+                </span>
+              </div>
+
+              <!-- Нижняя подпись на фото -->
+              <div class="absolute bottom-2.5 left-3 right-3">
+                <span class="text-xs font-black text-white drop-shadow-md flex items-center gap-1.5">
+                  <span class="text-pink-300">🇬🇧</span> Английский в игре
+                </span>
+              </div>
+            </div>
+
+            <h3 class="text-lg font-black text-[#002855] leading-snug">Англоязычная среда</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Погружение в языковую среду через общение и игры по авторской методике Step by Step с 3 лет. Освоение языка идет естественно, как и родного.
+            </p>
+          </div>
+          <div class="pt-2 border-t border-slate-100 flex items-center gap-2 text-[11px] font-bold text-[#F24469]">
+            <span>✨ Билингвальные педагоги и Step by Step</span>
+          </div>
+        </div>
+
+        <!-- Преимущество 2: Безопасность 24/7 -->
+        <div class="bg-white rounded-3xl p-5 border border-[#E8E5DD] hover:border-pink-200 hover:shadow-xl transition-all duration-300 flex flex-col justify-between space-y-4">
+          <div class="space-y-4">
+            <div class="relative h-48 sm:h-52 w-full rounded-2xl overflow-hidden group bg-amber-50 shadow-inner border border-slate-200/60">
+              <img src="images/feature_safety.jpg" alt="Безопасность 24/7" class="w-full h-full object-cover group-hover:scale-108 transition duration-700 ease-out">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-black/5"></div>
+              
+              <div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-full bg-white/95 backdrop-blur-sm text-[10px] font-black uppercase tracking-wider text-[#002855] shadow-xs">
+                  24 / 7 Защита
+                </span>
+                <span class="px-2.5 py-1 rounded-full bg-white/95 backdrop-blur-sm text-[10px] font-black text-emerald-600 shadow-xs">
+                  Домофон
+                </span>
+              </div>
+
+              <div class="absolute bottom-2.5 left-3 right-3">
+                <span class="text-xs font-black text-white drop-shadow-md flex items-center gap-1.5">
+                  <span class="text-amber-300">🛡️</span> 2 взрослых в группе
+                </span>
+              </div>
+            </div>
+
+            <h3 class="text-lg font-black text-[#002855] leading-snug">Безопасность 24/7</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Двое взрослых в каждой группе (воспитатель + помощник), закрытая территория, вход по домофону, сертифицированная эко-мебель и мягкие игровые зоны.
+            </p>
+          </div>
+          <div class="pt-2 border-t border-slate-100 flex items-center gap-2 text-[11px] font-bold text-emerald-600">
+            <span>🔒 Сертифицированная эко-мебель</span>
+          </div>
+        </div>
+
+        <!-- Преимущество 3: Воспитатели высшей категории -->
+        <div class="bg-white rounded-3xl p-5 border border-[#E8E5DD] hover:border-pink-200 hover:shadow-xl transition-all duration-300 flex flex-col justify-between space-y-4">
+          <div class="space-y-4">
+            <div class="relative h-48 sm:h-52 w-full rounded-2xl overflow-hidden group bg-amber-50 shadow-inner border border-slate-200/60">
+              <img src="images/feature_teachers.jpg" alt="Воспитатели высшей категории" class="w-full h-full object-cover group-hover:scale-108 transition duration-700 ease-out">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-black/5"></div>
+              
+              <div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-full bg-white/95 backdrop-blur-sm text-[10px] font-black uppercase tracking-wider text-emerald-600 shadow-xs">
+                  Стаж 7+ лет
+                </span>
+                <span class="px-2.5 py-1 rounded-full bg-white/95 backdrop-blur-sm text-[10px] font-black text-[#002855] shadow-xs">
+                  Высшая кат.
+                </span>
+              </div>
+
+              <div class="absolute bottom-2.5 left-3 right-3">
+                <span class="text-xs font-black text-white drop-shadow-md flex items-center gap-1.5">
+                  <span class="text-emerald-300">👩‍🏫</span> Психолог и логопед
+                </span>
+              </div>
+            </div>
+
+            <h3 class="text-lg font-black text-[#002855] leading-snug">Воспитатели высшей категории</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Профессионалы с высшим педагогическим образованием и стажем от 7 лет. Преподаватель-казаховед, логопед и психолог в штате.
+            </p>
+          </div>
+          <div class="pt-2 border-t border-slate-100 flex items-center gap-2 text-[11px] font-bold text-[#002855]">
+            <span>🎓 Постоянное повышение квалификации</span>
+          </div>
+        </div>
+
+        <!-- Преимущество 4: 5-разовое питание -->
+        <div class="bg-white rounded-3xl p-5 border border-[#E8E5DD] hover:border-pink-200 hover:shadow-xl transition-all duration-300 flex flex-col justify-between space-y-4">
+          <div class="space-y-4">
+            <div class="relative h-48 sm:h-52 w-full rounded-2xl overflow-hidden group bg-amber-50 shadow-inner border border-slate-200/60">
+              <img src="images/feature_food.jpg" alt="5-разовое питание" class="w-full h-full object-cover group-hover:scale-108 transition duration-700 ease-out">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-black/5"></div>
+              
+              <div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-full bg-white/95 backdrop-blur-sm text-[10px] font-black uppercase tracking-wider text-amber-600 shadow-xs">
+                  Своя кухня
+                </span>
+                <span class="px-2.5 py-1 rounded-full bg-white/95 backdrop-blur-sm text-[10px] font-black text-slate-700 shadow-xs">
+                  5 приемов
+                </span>
+              </div>
+
+              <div class="absolute bottom-2.5 left-3 right-3">
+                <span class="text-xs font-black text-white drop-shadow-md flex items-center gap-1.5">
+                  <span class="text-yellow-300">🍓</span> Витаминное меню
+                </span>
+              </div>
+            </div>
+
+            <h3 class="text-lg font-black text-[#002855] leading-snug">5-разовое питание</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Здоровое витаминное меню от шеф-повара на собственной кухне. Коррекция меню под особенности аллергии и диеты вашего ребенка.
+            </p>
+          </div>
+          <div class="pt-2 border-t border-slate-100 flex items-center gap-2 text-[11px] font-bold text-amber-600">
+            <span>🥗 Халал-продукты и свежие фрукты</span>
+          </div>
+        </div>
+
+        <!-- Преимущество 5: Видеонаблюдение онлайн -->
+        <div class="bg-white rounded-3xl p-5 border border-[#E8E5DD] hover:border-pink-200 hover:shadow-xl transition-all duration-300 flex flex-col justify-between space-y-4">
+          <div class="space-y-4">
+            <div class="relative h-48 sm:h-52 w-full rounded-2xl overflow-hidden group bg-amber-50 shadow-inner border border-slate-200/60">
+              <img src="images/feature_cctv.jpg" alt="Видеонаблюдение онлайн" class="w-full h-full object-cover group-hover:scale-108 transition duration-700 ease-out">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-black/5"></div>
+              
+              <div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-full bg-white/95 backdrop-blur-sm text-[10px] font-black uppercase tracking-wider text-sky-600 shadow-xs">
+                  Онлайн HD
+                </span>
+                <span class="px-2.5 py-1 rounded-full bg-white/95 backdrop-blur-sm text-[10px] font-black text-[#F24469] shadow-xs">
+                  iOS / Android
+                </span>
+              </div>
+
+              <div class="absolute bottom-2.5 left-3 right-3">
+                <span class="text-xs font-black text-white drop-shadow-md flex items-center gap-1.5">
+                  <span class="text-sky-300">📱</span> Доступ со смартфона
+                </span>
+              </div>
+            </div>
+
+            <h3 class="text-lg font-black text-[#002855] leading-snug">Видеонаблюдение онлайн</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Родители в любой момент могут посмотреть, чем занят их малыш, через безопасное приложение на смартфоне.
+            </p>
+          </div>
+          <div class="pt-2 border-t border-slate-100 flex items-center gap-2 text-[11px] font-bold text-sky-600">
+            <span>📹 Камеры в группах и спортзалах</span>
+          </div>
+        </div>
+
+        <!-- Преимущество 6: Бассейн и соляная шахта -->
+        <div class="bg-white rounded-3xl p-5 border border-[#E8E5DD] hover:border-pink-200 hover:shadow-xl transition-all duration-300 flex flex-col justify-between space-y-4">
+          <div class="space-y-4">
+            <div class="relative h-48 sm:h-52 w-full rounded-2xl overflow-hidden group bg-amber-50 shadow-inner border border-slate-200/60">
+              <img src="images/branch_amanzhol.jpg" alt="Бассейн и соляная шахта" class="w-full h-full object-cover group-hover:scale-108 transition duration-700 ease-out">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-black/5"></div>
+              
+              <div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-full bg-white/95 backdrop-blur-sm text-[10px] font-black uppercase tracking-wider text-blue-600 shadow-xs">
+                  Вода +31°C
+                </span>
+                <span class="px-2.5 py-1 rounded-full bg-white/95 backdrop-blur-sm text-[10px] font-black text-amber-700 shadow-xs">
+                  Галокамера
+                </span>
+              </div>
+
+              <div class="absolute bottom-2.5 left-3 right-3">
+                <span class="text-xs font-black text-white drop-shadow-md flex items-center gap-1.5">
+                  <span class="text-cyan-300">🏊</span> Здоровье и иммунитет
+                </span>
+              </div>
+            </div>
+
+            <h3 class="text-lg font-black text-[#002855] leading-snug">Бассейн и соляная шахта</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Собственные теплые бассейны (+31°C) и галокамеры в филиалах Аманжол, Баянаул и Rams Luxury для профилактики простуд и закаливания.
+            </p>
+          </div>
+          <div class="pt-2 border-t border-slate-100 flex items-center gap-2 text-[11px] font-bold text-blue-600">
+            <span>💧 Индивидуальные и групповые заплывы</span>
+          </div>
+        </div>
+
+        <!-- Преимущество 7: Огороженная зеленая территория (широкая акцентная карточка) -->
+        <div class="bg-white rounded-3xl p-5 border border-[#E8E5DD] hover:border-pink-200 hover:shadow-xl transition-all duration-300 flex flex-col justify-between space-y-4 col-span-1 sm:col-span-2">
+          <div class="space-y-4">
+            <div class="relative h-48 sm:h-52 w-full rounded-2xl overflow-hidden group bg-amber-50 shadow-inner border border-slate-200/60">
+              <img src="images/feature_playground.jpg" alt="Огороженная зеленая территория" class="w-full h-full object-cover group-hover:scale-108 transition duration-700 ease-out">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-black/5"></div>
+              
+              <div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-full bg-white/95 backdrop-blur-sm text-[10px] font-black uppercase tracking-wider text-emerald-600 shadow-xs">
+                  Закрытый периметр
+                </span>
+                <span class="px-2.5 py-1 rounded-full bg-white/95 backdrop-blur-sm text-[10px] font-black text-[#002855] shadow-xs">
+                  Эко-парк
+                </span>
+              </div>
+
+              <div class="absolute bottom-2.5 left-3 right-3">
+                <span class="text-xs font-black text-white drop-shadow-md flex items-center gap-1.5">
+                  <span class="text-emerald-300">🌳</span> Безопасный тартан и теневые беседки
+                </span>
+              </div>
+            </div>
+
+            <h3 class="text-lg font-black text-[#002855] leading-snug">Огороженная зеленая территория</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Свои просторные игровые площадки с безопасным тартановым покрытием, теневыми беседками и песочницами в тихих парковых зонах Алматы.
+            </p>
+          </div>
+          <div class="pt-2 border-t border-slate-100 flex items-center gap-2 text-[11px] font-bold text-emerald-600">
+            <span>🌿 Прогулки на свежем воздухе 2 раза в день</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Блок психологической поддержки (Sun School .b-psychologySupport) -->
+      <div class="mt-12 bg-white rounded-3xl p-6 sm:p-8 border border-[#E8E5DD] shadow-sm flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-4">
+          <div class="w-16 h-16 rounded-2xl bg-[#FDF0F3] text-[#F24469] flex items-center justify-center text-3xl shrink-0">
+            ❤️
+          </div>
+          <div>
+            <h4 class="text-lg font-black text-[#002855]">Психологическая поддержка родителей: Отдел заботы «Зайка»</h4>
+            <p class="text-xs sm:text-sm text-slate-500 mt-1 max-w-2xl">
+              Чтобы помочь родителям и деткам мягко пройти период адаптации, наш штатный психолог проводит индивидуальные беседы, дает практические рекомендации и сопровождает семью с первых дней.
+            </p>
+          </div>
+        </div>
+        <button onclick="openModal('modal-callback')" class="b-btn b-btn_pinkPrimary px-6 py-3 text-xs font-bold shrink-0">
+          <span>Консультация психолога</span>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       6. КОНЦЕПЦИЯ РАЗВИТИЯ ABC (SUN SCHOOL АВС STYLE)
+       ========================================================================= -->
+  <section id="abc" class="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="text-center max-w-3xl mx-auto mb-16 space-y-2">
+      <span class="text-xs font-extrabold uppercase tracking-wider text-[#F24469]">Методология сети «Зайка»</span>
+      <h2 class="text-2xl sm:text-4xl font-black text-[#002855] tracking-tight">
+        Уникальная концепция развития ABC
+      </h2>
+      <p class="text-slate-500 text-sm sm:text-base">
+        Гармоничное воспитание счастливой и уверенной в себе личности по трем ключевым векторам
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- A: Ability / Интеллект -->
+      <div class="b-cardAbc">
+        <div class="w-14 h-14 rounded-2xl bg-[#FDF0F3] text-[#F24469] flex items-center justify-center text-2xl font-black mb-6">
+          A
+        </div>
+        <h3 class="text-xl font-black text-[#002855] mb-3">Ability • Интеллект</h3>
+        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+          Интеллектуальное развитие: раннее чтение по кубикам Зайцева, математика Петерсона, пространственное мышление, английский язык Step by Step и казахский язык. Подготовка к 0 классу гимназий.
+        </p>
+      </div>
+
+      <!-- B: Body / Здоровье -->
+      <div class="b-cardAbc">
+        <div class="w-14 h-14 rounded-2xl bg-[#E0F7FA] text-[#00B4D8] flex items-center justify-center text-2xl font-black mb-6">
+          B
+        </div>
+        <h3 class="text-xl font-black text-[#002855] mb-3">Body • Здоровье</h3>
+        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+          Физическое развитие: обучение плаванию в бассейне, укрепление дыхания в соляных шахтах, секция айкидо и хореография, утренняя гимнастика, правильная осанка и 5-разовое здоровое питание.
+        </p>
+      </div>
+
+      <!-- C: Communication / Социализация -->
+      <div class="b-cardAbc">
+        <div class="w-14 h-14 rounded-2xl bg-[#FFF8E1] text-[#FFB300] flex items-center justify-center text-2xl font-black mb-6">
+          C
+        </div>
+        <h3 class="text-xl font-black text-[#002855] mb-3">Communication • Социализация</h3>
+        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+          Эмоциональный интеллект: умение дружить, мирно решать конфликты, выражать свои эмоции и слушать других. Основы этикета и финансовой грамотности в филиале Rams Luxury.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Билингвальный подход (Sun School .b-cardBilingualList) -->
+    <div class="mt-16 bg-white rounded-3xl p-8 sm:p-10 border border-[#E8E5DD] shadow-sm">
+      <h3 class="text-xl sm:text-2xl font-black text-[#002855] mb-6 text-center">
+        Билингвальный подход в течение дня
+      </h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="p-6 bg-[#F9F8F5] rounded-2xl border border-slate-200 space-y-3">
+          <div class="flex items-center gap-3">
+            <span class="text-2xl">🇰🇿 / 🇷🇺</span>
+            <h4 class="font-extrabold text-[#002855] text-base">Русско-казахская половина дня</h4>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Дети осваивают государственную программу, знакомятся с окружающим миром, проводят опыты, развивают речь и мелкую моторику с преподавателем-казаховедом.
+          </p>
+        </div>
+
+        <div class="p-6 bg-[#FDF0F3] rounded-2xl border border-[#F24469]/20 space-y-3">
+          <div class="flex items-center gap-3">
+            <span class="text-2xl">🇬🇧</span>
+            <h4 class="font-extrabold text-[#002855] text-base">Англоязычная половина дня</h4>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Погружение в английскую речь: авторская методика Step by Step. Дети поют песни, играют в сюжетные игры, танцуют и рисуют, общаясь на английском языке.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================================
+       7. КАЛЬКУЛЯТОР СТОИМОСТИ И ВАУЧЕРА (DAMUBALA)
+       ========================================================================= -->
+  <section id="calculator" class="py-16 md:py-24 bg-white/70 backdrop-blur-md border-y border-[#E8E5DD]">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-extrabold uppercase tracking-wider text-[#00A86B]">Государственная поддержка</span>
+        <h2 class="text-2xl sm:text-4xl font-black text-[#002855] tracking-tight mt-1">
+          Калькулятор стоимости с гос. ваучером
+        </h2>
+        <p class="text-slate-500 text-sm mt-2">
+          Все 5 филиалов сети «ЗАЙКА» имеют гос. аккредитацию: государство субсидирует <b>50 000 ₸</b> в месяц
+        </p>
+      </div>
+
+      <div class="bg-[#F9F8F5] rounded-3xl p-6 sm:p-10 border border-[#E8E5DD] shadow-sm">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+          
+          <div class="md:col-span-7 space-y-6">
+            <div>
+              <label class="block text-xs font-extrabold uppercase tracking-wider text-slate-500 mb-2">1. Выберите филиал в Алматы</label>
+              <select id="calc-branch" class="w-full px-4 py-3.5 bg-white border border-slate-200 rounded-xl font-bold text-[#002855] text-sm focus:outline-none focus:ring-2 focus:ring-[#F24469]">
+                <option value="markova">Филиал №1: ул. Маркова, 9 (Бостандыкский)</option>
+                <option value="amanzhol">Филиал №2: ул. Аманжол, 6 (Ауэзовский, бассейн, соль)</option>
+                <option value="kozhamkulova">Филиал №3: ул. Кожамкулова, 149 (Алмалинский, Есентай)</option>
+                <option value="bayanaul">Филиал №4: мкр. Баянаул, 56 (Ауэзовский, бассейн, соль)</option>
+                <option value="hodzhanova">Филиал №5: ул. Ходжанова, 5в (Rams Luxury, нейрохакинг)</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-extrabold uppercase tracking-wider text-slate-500 mb-2">2. Возраст ребенка</label>
+              <div class="grid grid-cols-2 gap-3">
+                <label class="flex items-center gap-3 p-3.5 bg-white border border-slate-200 rounded-xl cursor-pointer hover:border-[#F24469] transition">
+                  <input type="radio" name="calc-age" value="over2" checked class="text-[#F24469] focus:ring-[#F24469]">
+                  <span class="text-xs sm:text-sm font-bold text-slate-800">От 2 до 7 лет <span class="text-emerald-600 block text-[11px] font-normal">Ваучер действует</span></span>
+                </label>
+                <label class="flex items-center gap-3 p-3.5 bg-white border border-slate-200 rounded-xl cursor-pointer hover:border-[#F24469] transition">
+                  <input type="radio" name="calc-age" value="under2" class="text-[#F24469] focus:ring-[#F24469]">
+                  <span class="text-xs sm:text-sm font-bold text-slate-800">Ясли (1.5 – 2 года) <span class="text-amber-600 block text-[11px] font-normal">Особый присмотр</span></span>
+                </label>
+              </div>
+            </div>
+
+            <div id="calc-note" class="text-xs text-emerald-800 bg-emerald-50 p-3.5 rounded-xl border border-emerald-200">
+              <!-- Заполняется JS -->
+            </div>
+          </div>
+
+          <div class="md:col-span-5 bg-[#002855] text-white rounded-2xl p-6 sm:p-8 space-y-4">
+            <span class="text-xs font-extrabold uppercase tracking-wider text-[#FFB300] block">Расчет тарифа за месяц</span>
+            
+            <div class="space-y-2 pb-4 border-b border-white/10 text-xs">
+              <div class="flex justify-between text-slate-300">
+                <span>Базовая коммерческая цена:</span>
+                <span id="calc-comm-price" class="font-bold text-white">185 000 ₸</span>
+              </div>
+              <div class="flex justify-between text-emerald-400 font-bold">
+                <span>Субсидия государства:</span>
+                <span id="calc-voucher-discount">- 50 000 ₸</span>
+              </div>
+            </div>
+
+            <div>
+              <span class="text-xs text-slate-400 block mb-1">Итого к оплате родителями:</span>
+              <div class="flex items-baseline gap-2">
+                <span id="calc-final-price" class="text-3xl sm:text-4xl font-black text-emerald-400">135 000 ₸</span>
+                <span class="text-xs text-slate-300">/ месяц</span>
+              </div>
+              <span class="text-[11px] text-slate-400 block mt-1.5">Взнос: 40 000 ₸ в год</span>
+            </div>
+
+            <button onclick="openTourModal()" class="b-btn b-btn_pink w-full py-3.5 text-xs sm:text-sm font-extrabold">
+              <span>Зафиксировать место по ваучеру</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       8. АКЦИИ И СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ (SUN SCHOOL .b-stockBox)
+       ========================================================================= -->
+  <section id="stocks" class="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <h2 class="text-2xl sm:text-4xl font-black text-[#002855] tracking-tight">
+        Специальные предложения и акции
+      </h2>
+      <p class="text-slate-500 text-sm mt-2">
+        Выгодные условия при заключении договора в детских садах «ЗАЙКА»
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Акция 1 -->
+      <div class="bg-white rounded-3xl p-6 border border-[#E8E5DD] shadow-sm flex flex-col justify-between space-y-4">
+        <div class="space-y-3">
+          <span class="b-tag_greenLight">Все 5 филиалов</span>
+          <h3 class="text-xl font-black text-[#002855]">Гос. ваучер DamuBala: экономия 50 000 ₸</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Поможем быстро зарегистрироваться в государственной системе подушевого финансирования и получить официальную субсидию на весь учебный год!
+          </p>
+        </div>
+        <button onclick="openTourModal('Акция по ваучеру DamuBala')" class="b-btn b-btn_pinkPrimary py-2.5 text-xs font-bold w-full">
+          <span>Узнать подробнее</span>
+        </button>
+      </div>
+
+      <!-- Акция 2 -->
+      <div class="bg-white rounded-3xl p-6 border border-[#E8E5DD] shadow-sm flex flex-col justify-between space-y-4">
+        <div class="space-y-3">
+          <span class="b-tag_orangeLight">Филиал Аманжол и Баянаул</span>
+          <h3 class="text-xl font-black text-[#002855]">Пробный визит в бассейн и соляную шахту</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Приходите на день открытых дверей и получите бесплатное ознакомительное занятие по плаванию с опытным тренером для вашего ребенка.
+          </p>
+        </div>
+        <button onclick="openTourModal('Пробный визит в бассейн')" class="b-btn b-btn_pinkPrimary py-2.5 text-xs font-bold w-full">
+          <span>Записаться на пробу</span>
+        </button>
+      </div>
+
+      <!-- Акция 3 -->
+      <div class="bg-white rounded-3xl p-6 border border-[#E8E5DD] shadow-sm flex flex-col justify-between space-y-4">
+        <div class="space-y-3">
+          <span class="b-tag_rating">Филиал Rams Luxury</span>
+          <h3 class="text-xl font-black text-[#002855]">Скидка 50% на вступительный взнос</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            При оформлении договора до конца текущего месяца в филиале ЖК Rams Luxury — скидка 50% на ежегодный взнос и курс нейрохакинга в подарок!
+          </p>
+        </div>
+        <button onclick="openTourModal('Скидка 50% на взнос Rams Luxury')" class="b-btn b-btn_pink py-2.5 text-xs font-bold w-full">
+          <span>Получить скидку</span>
+        </button>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================================
+       9. ЛИД-ФОРМА «КАК ПОДГОТОВИТЬ РЕБЕНКА К САДИКУ» (SUN SCHOOL STYLE)
+       ========================================================================= -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+    <div class="b-signTourBox p-8 sm:p-12 bg-gradient-to-r from-white to-[#FDF0F3]">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <div class="lg:col-span-8 space-y-5">
+          <div>
+            <span class="text-xs font-extrabold uppercase tracking-wider text-[#F24469]">Подарок родителям</span>
+            <h3 class="text-2xl sm:text-3xl font-black text-[#002855] tracking-tight mt-1">
+              Как подготовить ребенка к детскому саду?
+            </h3>
+            <p class="text-slate-600 text-xs sm:text-sm mt-1">
+              Заполните форму и получите на почту и в WhatsApp бесплатное практическое пособие от психологов сети «ЗАЙКА» по мягкой адаптации без слез
+            </p>
+          </div>
+
+          <form id="book-form" class="space-y-3">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <input id="book-name" type="text" placeholder="Ваше имя" required class="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-xs font-medium focus:ring-2 focus:ring-[#F24469]">
+              <input id="book-phone" type="tel" placeholder="Ваш телефон *" required class="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-xs font-medium focus:ring-2 focus:ring-[#F24469]">
+              <input id="book-email" type="email" placeholder="E-mail" class="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-xs font-medium focus:ring-2 focus:ring-[#F24469]">
+            </div>
+            <button type="submit" class="b-btn b-btn_pink px-8 py-3.5 text-xs sm:text-sm font-extrabold">
+              <span>Получить книгу бесплатно</span>
+            </button>
+          </form>
+        </div>
+
+        <div class="lg:col-span-4 flex justify-center">
+          <div class="p-6 bg-white rounded-3xl shadow-lg border border-slate-100 text-center space-y-2">
+            <span class="text-4xl">📖</span>
+            <h4 class="font-extrabold text-[#002855] text-sm">«Адаптация без стресса»</h4>
+            <p class="text-[11px] text-slate-400">PDF-руководство для мам и пап от детского психолога</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       10. ОТЗЫВЫ РОДИТЕЛЕЙ ИЗ 2GIS (SUN SCHOOL STYLE + 2GIS AUTO-SLIDER)
+       ========================================================================= -->
+  <section id="reviews" class="py-16 md:py-24 bg-white/70 backdrop-blur-md border-y border-[#E8E5DD] relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Заголовок и шапка 2ГИС -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+        <div class="space-y-3 max-w-2xl">
+          <!-- Официальный бейдж 2ГИС -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-xs font-black text-emerald-800 shadow-sm">
+            <span class="w-5 h-5 rounded-full bg-emerald-500 text-white flex items-center justify-center text-[10px] font-black">2G</span>
+            <span>Подтвержденные отзывы в 2ГИС Алматы • Рейтинг 4.9 ★★★★★</span>
+          </div>
+
+          <h2 class="text-2xl sm:text-4xl font-black text-[#002855] tracking-tight">
+            Отзывы родителей о садах «ЗАЙКА» в 2GIS
+          </h2>
+          <p class="text-slate-500 text-sm">
+            Реальные истории семей из 2ГИС. Листайте вручную или смотрите в режиме автоматической прокрутки.
+          </p>
+        </div>
+
+        <!-- Кнопки управления и ссылка на 2ГИС -->
+        <div class="flex items-center gap-3 shrink-0">
+          <a href="https://2gis.kz/almaty/search/%D0%97%D0%B0%D0%B9%D0%BA%D0%B0%20%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9%20%D1%81%D0%B0%D0%B4" target="_blank" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition shadow-sm">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <span>Смотреть все в 2ГИС (100+) ↗</span>
+          </a>
+          
+          <div class="flex items-center gap-2">
+            <button onclick="scrollReviews(-1)" title="Предыдущий отзыв" class="w-11 h-11 rounded-2xl bg-white border border-slate-200 hover:border-[#F24469] hover:text-[#F24469] text-slate-700 flex items-center justify-center shadow-sm transition active:scale-95">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <button onclick="scrollReviews(1)" title="Следующий отзыв" class="w-11 h-11 rounded-2xl bg-white border border-slate-200 hover:border-[#F24469] hover:text-[#F24469] text-slate-700 flex items-center justify-center shadow-sm transition active:scale-95">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Лента отзывов (Линейная автопрокрутка + ручная прокрутка) -->
+      <div class="relative group">
+        <div id="reviews-track" class="flex gap-6 overflow-x-auto no-scrollbar scroll-smooth py-4 px-1 cursor-grab active:cursor-grabbing select-none" onmouseenter="pauseReviewsAutoScroll()" onmouseleave="startReviewsAutoScroll()">
+          
+          <!-- Отзыв 1: Кожамкулова -->
+          <div class="min-w-[320px] sm:min-w-[380px] md:min-w-[420px] max-w-[430px] shrink-0 bg-[#F9F8F5] rounded-3xl p-7 border border-slate-200 flex flex-col justify-between space-y-4 hover:shadow-xl hover:border-emerald-300 transition duration-300">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="w-12 h-12 rounded-2xl bg-[#E8F8F2] text-emerald-700 font-black flex items-center justify-center text-base shadow-xs">
+                    АС
+                  </div>
+                  <div>
+                    <div class="flex items-center gap-1.5">
+                      <h4 class="font-black text-[#002855] text-sm">Айгерим Сейтжанова</h4>
+                      <span class="text-emerald-600 text-xs" title="Подтвержденный отзыв в 2ГИС">✓</span>
+                    </div>
+                    <a href="#chooseKindergarten" class="text-[11px] text-[#F24469] font-bold hover:underline block">Филиал ул. Кожамкулова, 149</a>
+                  </div>
+                </div>
+                <div class="flex flex-col items-end">
+                  <div class="flex text-amber-400 text-xs">★★★★★</div>
+                  <span class="text-[10px] font-black text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-full mt-1">2GIS • 5.0</span>
+                </div>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed italic">
+                «Огромная благодарность воспитателям и особенно Кульпаш Ондурусовне за чуткость и невероятную подготовку к школе! Сын научился читать, считать, пошел большой скачок в развитии речи. Очень довольны чистотой, охраной и 5-разовым сбалансированным меню.»
+              </p>
+            </div>
+            <div class="flex items-center justify-between pt-2 border-t border-slate-200/60">
+              <span class="text-[10px] text-slate-400 font-bold">2ГИС Алматы • Январь 2026</span>
+              <button onclick="openTourModal('Отзыв Кожамкулова')" class="text-xs font-black text-[#F24469] hover:underline">Записаться в этот сад →</button>
+            </div>
+          </div>
+
+          <!-- Отзыв 2: Маркова -->
+          <div class="min-w-[320px] sm:min-w-[380px] md:min-w-[420px] max-w-[430px] shrink-0 bg-[#F9F8F5] rounded-3xl p-7 border border-slate-200 flex flex-col justify-between space-y-4 hover:shadow-xl hover:border-emerald-300 transition duration-300">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="w-12 h-12 rounded-2xl bg-[#FDF0F3] text-[#F24469] font-black flex items-center justify-center text-base shadow-xs">
+                    ОК
+                  </div>
+                  <div>
+                    <div class="flex items-center gap-1.5">
+                      <h4 class="font-black text-[#002855] text-sm">Ольга Кравцова</h4>
+                      <span class="text-emerald-600 text-xs" title="Подтвержденный отзыв в 2ГИС">✓</span>
+                    </div>
+                    <a href="#chooseKindergarten" class="text-[11px] text-[#F24469] font-bold hover:underline block">Филиал ул. Маркова, 9</a>
+                  </div>
+                </div>
+                <div class="flex flex-col items-end">
+                  <div class="flex text-amber-400 text-xs">★★★★★</div>
+                  <span class="text-[10px] font-black text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-full mt-1">2GIS • 5.0</span>
+                </div>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed italic">
+                «Ходим на Маркова уже второй год. Воспитатели Дарья и Тамара — профессионалы с огромным материнским сердцем. Адаптация прошла буквально за три дня, ребенок каждое утро бежит в садик с радостью! Очень нравится английский язык и занятия в гончарной мастерской.»
+              </p>
+            </div>
+            <div class="flex items-center justify-between pt-2 border-t border-slate-200/60">
+              <span class="text-[10px] text-slate-400 font-bold">2ГИС Алматы • Февраль 2026</span>
+              <button onclick="openTourModal('Отзыв Маркова')" class="text-xs font-black text-[#F24469] hover:underline">Записаться в этот сад →</button>
+            </div>
+          </div>
+
+          <!-- Отзыв 3: Аманжол -->
+          <div class="min-w-[320px] sm:min-w-[380px] md:min-w-[420px] max-w-[430px] shrink-0 bg-[#F9F8F5] rounded-3xl p-7 border border-slate-200 flex flex-col justify-between space-y-4 hover:shadow-xl hover:border-emerald-300 transition duration-300">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="w-12 h-12 rounded-2xl bg-[#E0F7FA] text-[#00B4D8] font-black flex items-center justify-center text-base shadow-xs">
+                    БТ
+                  </div>
+                  <div>
+                    <div class="flex items-center gap-1.5">
+                      <h4 class="font-black text-[#002855] text-sm">Бахытжан Толеуов</h4>
+                      <span class="text-emerald-600 text-xs" title="Подтвержденный отзыв в 2ГИС">✓</span>
+                    </div>
+                    <a href="#chooseKindergarten" class="text-[11px] text-[#F24469] font-bold hover:underline block">Филиал ул. Аманжол, 6 (мкр. Мамыр)</a>
+                  </div>
+                </div>
+                <div class="flex flex-col items-end">
+                  <div class="flex text-amber-400 text-xs">★★★★★</div>
+                  <span class="text-[10px] font-black text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-full mt-1">2GIS • 5.0</span>
+                </div>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed italic">
+                «Выбрали этот филиал ради собственного бассейна и соляной шахты. За всю зиму ребенок практически не болел! Тренер по плаванию просто супер, дочка теперь обожает воду. По государственной программе DamuBala получаем хорошую субсидию 50 000 тенге.»
+              </p>
+            </div>
+            <div class="flex items-center justify-between pt-2 border-t border-slate-200/60">
+              <span class="text-[10px] text-slate-400 font-bold">2ГИС Алматы • Январь 2026</span>
+              <button onclick="openTourModal('Отзыв Аманжол')" class="text-xs font-black text-[#F24469] hover:underline">Записаться в этот сад →</button>
+            </div>
+          </div>
+
+          <!-- Отзыв 4: Ходжанова (Rams Luxury) -->
+          <div class="min-w-[320px] sm:min-w-[380px] md:min-w-[420px] max-w-[430px] shrink-0 bg-[#F9F8F5] rounded-3xl p-7 border border-slate-200 flex flex-col justify-between space-y-4 hover:shadow-xl hover:border-emerald-300 transition duration-300">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="w-12 h-12 rounded-2xl bg-[#FFF8E1] text-[#FFB300] font-black flex items-center justify-center text-base shadow-xs">
+                    ГМ
+                  </div>
+                  <div>
+                    <div class="flex items-center gap-1.5">
+                      <h4 class="font-black text-[#002855] text-sm">Гульнара Мусаева</h4>
+                      <span class="text-emerald-600 text-xs" title="Подтвержденный отзыв в 2ГИС">✓</span>
+                    </div>
+                    <a href="#chooseKindergarten" class="text-[11px] text-[#F24469] font-bold hover:underline block">Филиал ул. Ходжанова, 5В (Rams Luxury)</a>
+                  </div>
+                </div>
+                <div class="flex flex-col items-end">
+                  <div class="flex text-amber-400 text-xs">★★★★★</div>
+                  <span class="text-[10px] font-black text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-full mt-1">2GIS • 5.0</span>
+                </div>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed italic">
+                «Перевели дочку из другого частного сада в Rams Luxury. Уровень просто потрясающий: закрытая безопасная территория, соляная комната, занятия робототехникой и нейрогимнастикой. Видеонаблюдение онлайн в приложении очень успокаивает родителей!»
+              </p>
+            </div>
+            <div class="flex items-center justify-between pt-2 border-t border-slate-200/60">
+              <span class="text-[10px] text-slate-400 font-bold">2ГИС Алматы • Март 2026</span>
+              <button onclick="openTourModal('Отзыв Ходжанова')" class="text-xs font-black text-[#F24469] hover:underline">Записаться в этот сад →</button>
+            </div>
+          </div>
+
+          <!-- Отзыв 5: Баянауыл -->
+          <div class="min-w-[320px] sm:min-w-[380px] md:min-w-[420px] max-w-[430px] shrink-0 bg-[#F9F8F5] rounded-3xl p-7 border border-slate-200 flex flex-col justify-between space-y-4 hover:shadow-xl hover:border-emerald-300 transition duration-300">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="w-12 h-12 rounded-2xl bg-[#EDE7F6] text-purple-700 font-black flex items-center justify-center text-base shadow-xs">
+                    АД
+                  </div>
+                  <div>
+                    <div class="flex items-center gap-1.5">
+                      <h4 class="font-black text-[#002855] text-sm">Алина Дюсенова</h4>
+                      <span class="text-emerald-600 text-xs" title="Подтвержденный отзыв в 2ГИС">✓</span>
+                    </div>
+                    <a href="#chooseKindergarten" class="text-[11px] text-[#F24469] font-bold hover:underline block">Филиал мкр-н Баянауыл, 56</a>
+                  </div>
+                </div>
+                <div class="flex flex-col items-end">
+                  <div class="flex text-amber-400 text-xs">★★★★★</div>
+                  <span class="text-[10px] font-black text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-full mt-1">2GIS • 5.0</span>
+                </div>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed italic">
+                «Прекрасный садик! Дочка с удовольствием ходит на хореографию и гимнастику. Воспитатели внимательные, каждый день присылают фото и видеоотчеты в родительский чат. Очень уютная семейная атмосфера и вкусная здоровая еда.»
+              </p>
+            </div>
+            <div class="flex items-center justify-between pt-2 border-t border-slate-200/60">
+              <span class="text-[10px] text-slate-400 font-bold">2ГИС Алматы • Февраль 2026</span>
+              <button onclick="openTourModal('Отзыв Баянауыл')" class="text-xs font-black text-[#F24469] hover:underline">Записаться в этот сад →</button>
+            </div>
+          </div>
+
+          <!-- Отзыв 6: Кожамкулова (Марат) -->
+          <div class="min-w-[320px] sm:min-w-[380px] md:min-w-[420px] max-w-[430px] shrink-0 bg-[#F9F8F5] rounded-3xl p-7 border border-slate-200 flex flex-col justify-between space-y-4 hover:shadow-xl hover:border-emerald-300 transition duration-300">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="w-12 h-12 rounded-2xl bg-[#E8EAF6] text-indigo-700 font-black flex items-center justify-center text-base shadow-xs">
+                    МИ
+                  </div>
+                  <div>
+                    <div class="flex items-center gap-1.5">
+                      <h4 class="font-black text-[#002855] text-sm">Марат Искаков</h4>
+                      <span class="text-emerald-600 text-xs" title="Подтвержденный отзыв в 2ГИС">✓</span>
+                    </div>
+                    <a href="#chooseKindergarten" class="text-[11px] text-[#F24469] font-bold hover:underline block">Филиал ул. Кожамкулова, 149</a>
+                  </div>
+                </div>
+                <div class="flex flex-col items-end">
+                  <div class="flex text-amber-400 text-xs">★★★★★</div>
+                  <span class="text-[10px] font-black text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-full mt-1">2GIS • 5.0</span>
+                </div>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed italic">
+                «Сильная подготовка и бережное отношение. С 3 лет изучают английский по методике Step by Step, ребенок дома повторяет слова и песенки. Все педагоги с профильным высшим образованием, охрана на входе, всегда порядок.»
+              </p>
+            </div>
+            <div class="flex items-center justify-between pt-2 border-t border-slate-200/60">
+              <span class="text-[10px] text-slate-400 font-bold">2ГИС Алматы • Январь 2026</span>
+              <button onclick="openTourModal('Отзыв Кожамкулова 2')" class="text-xs font-black text-[#F24469] hover:underline">Записаться в этот сад →</button>
+            </div>
+          </div>
+
+          <!-- Отзыв 7: Ходжанова (Динара) -->
+          <div class="min-w-[320px] sm:min-w-[380px] md:min-w-[420px] max-w-[430px] shrink-0 bg-[#F9F8F5] rounded-3xl p-7 border border-slate-200 flex flex-col justify-between space-y-4 hover:shadow-xl hover:border-emerald-300 transition duration-300">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="w-12 h-12 rounded-2xl bg-[#FFF8E1] text-[#FFB300] font-black flex items-center justify-center text-base shadow-xs">
+                    ДС
+                  </div>
+                  <div>
+                    <div class="flex items-center gap-1.5">
+                      <h4 class="font-black text-[#002855] text-sm">Динара Сапарова</h4>
+                      <span class="text-emerald-600 text-xs" title="Подтвержденный отзыв в 2ГИС">✓</span>
+                    </div>
+                    <a href="#chooseKindergarten" class="text-[11px] text-[#F24469] font-bold hover:underline block">Филиал ЖК Rams Luxury</a>
+                  </div>
+                </div>
+                <div class="flex flex-col items-end">
+                  <div class="flex text-amber-400 text-xs">★★★★★</div>
+                  <span class="text-[10px] font-black text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-full mt-1">2GIS • 5.0</span>
+                </div>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed italic">
+                «Отдали сына в филиал в Rams Luxury на Ходжанова. Уровень просто восторг: закрытая территория, видеонаблюдение в приложении, занятия нейрохакингом и этикетом. Сын стал намного спокойнее и сосредоточеннее. Рекомендую всем родителям!»
+              </p>
+            </div>
+            <div class="flex items-center justify-between pt-2 border-t border-slate-200/60">
+              <span class="text-[10px] text-slate-400 font-bold">2ГИС Алматы • Февраль 2026</span>
+              <button onclick="openTourModal('Отзыв Rams Luxury 2')" class="text-xs font-black text-[#F24469] hover:underline">Записаться в этот сад →</button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Индикатор статуса автопрокрутки и подсказка -->
+        <div class="mt-4 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-2">
+          <div class="flex items-center gap-2">
+            <span id="reviews-status-indicator" class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span id="reviews-status-text">Автопрокрутка активна (наведите курсор, чтобы приостановить)</span>
+          </div>
+          <div class="flex items-center gap-1.5 font-semibold text-slate-500">
+            <span>👈 Листайте свайпом или кнопками 👉</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       11. ФОТОГАЛЕРЕЯ (SUN SCHOOL .b-photoSlider С ЛАЙТБОКСОМ)
+       ========================================================================= -->
+  <section class="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <h2 class="text-2xl sm:text-4xl font-black text-[#002855] tracking-tight">
+        Как выглядят наши детские сады
+      </h2>
+      <p class="text-slate-500 text-sm mt-2">
+        Светлые просторные группы, бассейны, соляные пещеры и развивающие зоны
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+      
+      <!-- Филиал 1: Маркова -->
+      <div onclick="openGalleryModal('images/branch_markova.jpg', 'Филиал №1: ул. Маркова, 9 — Гончарная мастерская и шахматы')" class="h-48 sm:h-56 rounded-2xl overflow-hidden cursor-pointer group relative shadow-sm border border-slate-200">
+        <img src="images/branch_markova.jpg" alt="Филиал Маркова" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition"></div>
+        <div class="absolute bottom-3 left-3 right-3 text-white">
+          <span class="text-[10px] font-black uppercase text-pink-300 block">Филиал №1 (Маркова)</span>
+          <p class="text-xs font-bold leading-tight line-clamp-1">Гончарное дело и шахматы</p>
+        </div>
+        <div class="absolute top-2.5 right-2.5 bg-black/40 backdrop-blur-sm p-1.5 rounded-full text-white opacity-0 group-hover:opacity-100 transition">
+          <i data-lucide="maximize-2" class="w-4 h-4"></i>
+        </div>
+      </div>
+
+      <!-- Филиал 2: Аманжол -->
+      <div onclick="openGalleryModal('images/branch_amanzhol.jpg', 'Филиал №2: ул. Аманжол, 6 — Бассейн и соляная шахта')" class="h-48 sm:h-56 rounded-2xl overflow-hidden cursor-pointer group relative shadow-sm border border-slate-200">
+        <img src="images/branch_amanzhol.jpg" alt="Филиал Аманжол" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition"></div>
+        <div class="absolute bottom-3 left-3 right-3 text-white">
+          <span class="text-[10px] font-black uppercase text-pink-300 block">Филиал №2 (Аманжол)</span>
+          <p class="text-xs font-bold leading-tight line-clamp-1">Бассейн и соляная шахта</p>
+        </div>
+        <div class="absolute top-2.5 right-2.5 bg-black/40 backdrop-blur-sm p-1.5 rounded-full text-white opacity-0 group-hover:opacity-100 transition">
+          <i data-lucide="maximize-2" class="w-4 h-4"></i>
+        </div>
+      </div>
+
+      <!-- Филиал 3: Кожамкулова -->
+      <div onclick="openGalleryModal('images/branch_kozhamkulova.jpg', 'Филиал №3: ул. Кожамкулова, 149 — Робототехника и набережная Есентай')" class="h-48 sm:h-56 rounded-2xl overflow-hidden cursor-pointer group relative shadow-sm border border-slate-200">
+        <img src="images/branch_kozhamkulova.jpg" alt="Филиал Кожамкулова" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition"></div>
+        <div class="absolute bottom-3 left-3 right-3 text-white">
+          <span class="text-[10px] font-black uppercase text-pink-300 block">Филиал №3 (Есентай)</span>
+          <p class="text-xs font-bold leading-tight line-clamp-1">Робототехника и STEAM</p>
+        </div>
+        <div class="absolute top-2.5 right-2.5 bg-black/40 backdrop-blur-sm p-1.5 rounded-full text-white opacity-0 group-hover:opacity-100 transition">
+          <i data-lucide="maximize-2" class="w-4 h-4"></i>
+        </div>
+      </div>
+
+      <!-- Филиал 4: Баянауыл -->
+      <div onclick="openGalleryModal('images/branch_bayanaul.jpg', 'Филиал №4: мкр. Баянауыл, 56 — Хореография, гимнастика и бассейн')" class="h-48 sm:h-56 rounded-2xl overflow-hidden cursor-pointer group relative shadow-sm border border-slate-200">
+        <img src="images/branch_bayanaul.jpg" alt="Филиал Баянауыл" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition"></div>
+        <div class="absolute bottom-3 left-3 right-3 text-white">
+          <span class="text-[10px] font-black uppercase text-pink-300 block">Филиал №4 (Баянауыл)</span>
+          <p class="text-xs font-bold leading-tight line-clamp-1">Хореография и бассейн</p>
+        </div>
+        <div class="absolute top-2.5 right-2.5 bg-black/40 backdrop-blur-sm p-1.5 rounded-full text-white opacity-0 group-hover:opacity-100 transition">
+          <i data-lucide="maximize-2" class="w-4 h-4"></i>
+        </div>
+      </div>
+
+      <!-- Филиал 5: Ходжанова (Rams Luxury) -->
+      <div onclick="openGalleryModal('images/branch_hodzhanova.jpg', 'Филиал №5: ул. Ходжанова, 5В — Нейрохакинг и финграмотность (Rams Luxury)')" class="h-48 sm:h-56 rounded-2xl overflow-hidden cursor-pointer group relative shadow-sm border border-slate-200 col-span-2 sm:col-span-1">
+        <img src="images/branch_hodzhanova.jpg" alt="Филиал Rams Luxury" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition"></div>
+        <div class="absolute bottom-3 left-3 right-3 text-white">
+          <span class="text-[10px] font-black uppercase text-pink-300 block">Филиал №5 (Rams Luxury)</span>
+          <p class="text-xs font-bold leading-tight line-clamp-1">Нейрохакинг и логика</p>
+        </div>
+        <div class="absolute top-2.5 right-2.5 bg-black/40 backdrop-blur-sm p-1.5 rounded-full text-white opacity-0 group-hover:opacity-100 transition">
+          <i data-lucide="maximize-2" class="w-4 h-4"></i>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       ПРЕДПОСЛЕДНИЙ БЛОК: СЕКЦИЯ КАРТОЧЕК САДОВ С ФИЛЬТРОМ (SUN SCHOOL STYLE)
+       ========================================================================= -->
+  <section id="chooseKindergarten" class="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="text-center max-w-3xl mx-auto mb-10">
+      <h2 class="text-2xl sm:text-4xl font-black text-[#002855] tracking-tight">
+        Выберите подходящий вам частный детский сад
+      </h2>
+      <p class="text-slate-500 text-sm sm:text-base mt-2">
+        5 лицензированных филиалов в лучших районах города Алматы
+      </p>
+    </div>
+
+    <!-- Форма-фильтр в стиле Sun School (.b-form_chooseKindergarten) -->
+    <div class="bg-white p-5 sm:p-6 rounded-3xl border border-[#E8E5DD] shadow-sm mb-12">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
+        
+        <div>
+          <label class="block text-[11px] font-extrabold uppercase tracking-wider text-slate-400 mb-1.5">Район города Алматы</label>
+          <select id="select-district-filter" class="w-full px-4 py-3 bg-[#F9F8F5] border border-slate-200 rounded-xl text-xs sm:text-sm font-bold text-[#002855] focus:outline-none focus:ring-2 focus:ring-[#F24469]">
+            <option value="all">Все районы (5 филиалов)</option>
+            <option value="bostandyk">Бостандыкский район (Маркова, Ходжанова)</option>
+            <option value="auezov">Ауэзовский район (Аманжол, Баянаул)</option>
+            <option value="almaly">Алмалинский район (Кожамкулова / Есентай)</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-[11px] font-extrabold uppercase tracking-wider text-slate-400 mb-1.5">Быстрый фильтр</label>
+          <div class="flex gap-2">
+            <button onclick="filterByDistrict('all')" data-district="all" class="filter-pill px-4 py-2 rounded-full text-xs font-bold bg-[#F24469] text-white shadow-sm transition">
+              Все
+            </button>
+            <button onclick="filterByDistrict('bostandyk')" data-district="bostandyk" class="filter-pill px-4 py-2 rounded-full text-xs font-bold bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition">
+              Бостандыкский
+            </button>
+            <button onclick="filterByDistrict('auezov')" data-district="auezov" class="filter-pill px-4 py-2 rounded-full text-xs font-bold bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition">
+              Ауэзовский
+            </button>
+          </div>
+        </div>
+
+        <div class="flex justify-start sm:justify-end pt-2 sm:pt-0">
+          <a href="#contacts" class="b-btn b-btn_pink px-6 py-3 text-xs sm:text-sm font-bold w-full sm:w-auto">
+            <span>Посмотреть на карте 2GIS</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Сетка карточек садов (JS рендерит по дизайну Sun School) -->
+    <div id="branches-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Cards injected by js/app.js -->
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================================
+       ЛИД-ФОРМА «ВЫБЕРИТЕ ДЕТСКИЙ САД МЕЧТЫ» (SUN SCHOOL .b-signTourBox)
+       ========================================================================= -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+    <div class="b-signTourBox p-8 sm:p-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <div class="lg:col-span-8 space-y-6">
+          <div>
+            <h3 class="text-2xl sm:text-3xl font-black text-[#002855] tracking-tight">
+              Выберите детский сад мечты
+            </h3>
+            <p class="text-slate-500 text-sm mt-1">
+              Заполните форму, и заведующая подберет сад сети «ЗАЙКА», подходящий именно вашему малышу
+            </p>
+          </div>
+
+          <form id="selection-form" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div>
+                <input id="selection-name" type="text" placeholder="Ваше имя" required class="w-full px-4 py-3.5 bg-[#F9F8F5] border border-slate-200 rounded-xl text-xs sm:text-sm font-medium focus:outline-none focus:ring-2 focus:ring-[#F24469]">
+              </div>
+              <div>
+                <input id="selection-phone" type="tel" placeholder="Ваш телефон" required class="w-full px-4 py-3.5 bg-[#F9F8F5] border border-slate-200 rounded-xl text-xs sm:text-sm font-medium focus:outline-none focus:ring-2 focus:ring-[#F24469]">
+              </div>
+              <div>
+                <input id="selection-email" type="email" placeholder="E-mail (необязательно)" class="w-full px-4 py-3.5 bg-[#F9F8F5] border border-slate-200 rounded-xl text-xs sm:text-sm font-medium focus:outline-none focus:ring-2 focus:ring-[#F24469]">
+              </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-2">
+              <button type="submit" class="b-btn b-btn_pink px-8 py-3.5 text-sm font-extrabold w-full sm:w-auto">
+                <span>Подобрать садик</span>
+              </button>
+              <p class="text-[11px] text-slate-400">
+                🔒 Нажимая «Подобрать», вы соглашаетесь с условиями конфиденциальности.
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <div class="lg:col-span-4 flex justify-center">
+          <div class="relative group">
+            <div class="w-56 h-56 sm:w-64 sm:h-64 rounded-3xl overflow-hidden shadow-xl border-4 border-white bg-amber-50">
+              <img src="images/zaika_mascot_big.jpg" alt="Маскот Зайка" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute -bottom-3 -right-2 bg-white px-4 py-2 rounded-full shadow-lg border border-pink-100 flex items-center gap-1.5 text-xs font-black text-[#F24469]">
+              <span>♡</span> <span>Зайка ждет малыша!</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       12. КОНТАКТЫ И АДРЕСА 5 ФИЛИАЛОВ (SUN SCHOOL STYLE)
+       ========================================================================= -->
+  <section id="contacts" class="py-16 md:py-24 bg-white/70 backdrop-blur-md border-t border-[#E8E5DD]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <h2 class="text-2xl sm:text-4xl font-black text-[#002855] tracking-tight">
+            Контакты сети детских садов «ЗАЙКА»
+          </h2>
+          <p class="text-slate-500 text-sm">
+            Выберите удобный филиал и запишитесь на персональную экскурсию
+          </p>
+
+          <div class="space-y-4">
+            <div class="p-5 bg-[#F9F8F5] rounded-2xl border border-slate-200 flex items-center justify-between">
+              <div>
+                <span class="text-xs text-slate-400 font-bold uppercase block">Единый телефон записи</span>
+                <a href="tel:+77001360606" class="text-xl font-black text-[#002855] hover:text-[#F24469] transition">+7 700 136 06 06</a>
+              </div>
+              <a href="tel:+77001360606" class="b-btn b-btn_pinkPrimary px-4 py-2 text-xs font-bold">Позвонить</a>
+            </div>
+
+            <div class="p-5 bg-[#E8F8F2] rounded-2xl border border-emerald-200 flex items-center justify-between">
+              <div>
+                <span class="text-xs text-emerald-700 font-bold uppercase block">Официальный WhatsApp</span>
+                <span class="text-base font-bold text-emerald-950">+7 700 136 06 06 (Чат с заведующей)</span>
+              </div>
+              <a href="https://wa.me/77001360606" target="_blank" class="b-btn bg-emerald-600 text-white hover:bg-emerald-700 px-4 py-2 text-xs font-bold">Написать</a>
+            </div>
+
+            <div class="p-5 bg-[#FDF0F3] rounded-2xl border border-pink-200 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#FFB300] via-[#F24469] to-[#833AB4] flex items-center justify-center text-white shadow-xs shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </div>
+                <div>
+                  <span class="text-xs text-pink-700 font-bold uppercase block">Официальный Instagram</span>
+                  <a href="https://www.instagram.com/zaikasadik.kz" target="_blank" class="text-base font-black text-[#002855] hover:text-[#F24469] transition">@zaikasadik.kz</a>
+                </div>
+              </div>
+              <a href="https://www.instagram.com/zaikasadik.kz" target="_blank" class="b-btn b-btn_pink px-4 py-2 text-xs font-bold">Смотреть</a>
+            </div>
+          </div>
+
+          <!-- 5 филиалов списком с кнопками 2GIS -->
+          <div class="space-y-3 pt-2">
+            <h4 class="font-black text-[#002855] text-sm uppercase tracking-wider">Филиалы в городе Алматы:</h4>
+            
+            <div class="space-y-2.5 text-xs text-slate-700">
+              <div onclick="focusBranchMap('markova')" class="p-3.5 bg-[#F9F8F5] hover:bg-pink-50/70 border border-slate-200/80 hover:border-pink-200 rounded-2xl flex justify-between items-center transition cursor-pointer group shadow-xs">
+                <div class="flex items-center gap-2.5">
+                  <span class="w-6 h-6 rounded-full bg-white text-[#F24469] flex items-center justify-center font-black text-[11px] shadow-xs border border-pink-100 shrink-0">1</span>
+                  <div>
+                    <span class="font-black text-[#002855] block">ул. Маркова, 9</span>
+                    <span class="text-[11px] text-slate-500">Бостандыкский р-н (выше бульвара Бухар Жырау)</span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-[11px] font-bold text-slate-400 group-hover:text-[#F24469] transition hidden sm:inline">На карте</span>
+                  <a href="https://2gis.kz/almaty/search/Алматы%20Маркова%209%20детский%20сад%20Зайка" target="_blank" onclick="event.stopPropagation();" class="px-2.5 py-1 rounded-lg bg-sky-100 hover:bg-[#00B4D8] text-[#00B4D8] hover:text-white font-extrabold text-[10px] transition">2GIS</a>
+                </div>
+              </div>
+
+              <div onclick="focusBranchMap('amanzhol')" class="p-3.5 bg-[#F9F8F5] hover:bg-pink-50/70 border border-slate-200/80 hover:border-pink-200 rounded-2xl flex justify-between items-center transition cursor-pointer group shadow-xs">
+                <div class="flex items-center gap-2.5">
+                  <span class="w-6 h-6 rounded-full bg-white text-[#F24469] flex items-center justify-center font-black text-[11px] shadow-xs border border-pink-100 shrink-0">2</span>
+                  <div>
+                    <span class="font-black text-[#002855] block">ул. Аманжол, 6</span>
+                    <span class="text-[11px] text-slate-500">мкр. Мамыр-7 / Мамыр-4 (бассейн, соль)</span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-[11px] font-bold text-slate-400 group-hover:text-[#F24469] transition hidden sm:inline">На карте</span>
+                  <a href="https://2gis.kz/almaty/search/Алматы%20Аманжол%206%20детский%20сад%20Зайка" target="_blank" onclick="event.stopPropagation();" class="px-2.5 py-1 rounded-lg bg-sky-100 hover:bg-[#00B4D8] text-[#00B4D8] hover:text-white font-extrabold text-[10px] transition">2GIS</a>
+                </div>
+              </div>
+
+              <div onclick="focusBranchMap('kozhamkulova')" class="p-3.5 bg-[#F9F8F5] hover:bg-pink-50/70 border border-slate-200/80 hover:border-pink-200 rounded-2xl flex justify-between items-center transition cursor-pointer group shadow-xs">
+                <div class="flex items-center gap-2.5">
+                  <span class="w-6 h-6 rounded-full bg-white text-[#F24469] flex items-center justify-center font-black text-[11px] shadow-xs border border-pink-100 shrink-0">3</span>
+                  <div>
+                    <span class="font-black text-[#002855] block">ул. Кожамкулова, 149</span>
+                    <span class="text-[11px] text-slate-500">Алмалинский р-н (набережная реки Есентай)</span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-[11px] font-bold text-slate-400 group-hover:text-[#F24469] transition hidden sm:inline">На карте</span>
+                  <a href="https://2gis.kz/almaty/search/Алматы%20Кожамкулова%20149%20детский%20сад%20Зайка" target="_blank" onclick="event.stopPropagation();" class="px-2.5 py-1 rounded-lg bg-sky-100 hover:bg-[#00B4D8] text-[#00B4D8] hover:text-white font-extrabold text-[10px] transition">2GIS</a>
+                </div>
+              </div>
+
+              <div onclick="focusBranchMap('bayanaul')" class="p-3.5 bg-[#F9F8F5] hover:bg-pink-50/70 border border-slate-200/80 hover:border-pink-200 rounded-2xl flex justify-between items-center transition cursor-pointer group shadow-xs">
+                <div class="flex items-center gap-2.5">
+                  <span class="w-6 h-6 rounded-full bg-white text-[#F24469] flex items-center justify-center font-black text-[11px] shadow-xs border border-pink-100 shrink-0">4</span>
+                  <div>
+                    <span class="font-black text-[#002855] block">мкр-н Баянауыл, 56</span>
+                    <span class="text-[11px] text-slate-500">Ауэзовский р-н (Толе би — Яссауи — бассейн, соль)</span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-[11px] font-bold text-slate-400 group-hover:text-[#F24469] transition hidden sm:inline">На карте</span>
+                  <a href="https://2gis.kz/almaty/search/Алматы%20микрорайон%20Баянаул%2056%20детский%20сад%20Зайка" target="_blank" onclick="event.stopPropagation();" class="px-2.5 py-1 rounded-lg bg-sky-100 hover:bg-[#00B4D8] text-[#00B4D8] hover:text-white font-extrabold text-[10px] transition">2GIS</a>
+                </div>
+              </div>
+
+              <div onclick="focusBranchMap('hodzhanova')" class="p-3.5 bg-[#F9F8F5] hover:bg-pink-50/70 border border-slate-200/80 hover:border-pink-200 rounded-2xl flex justify-between items-center transition cursor-pointer group shadow-xs">
+                <div class="flex items-center gap-2.5">
+                  <span class="w-6 h-6 rounded-full bg-white text-[#F24469] flex items-center justify-center font-black text-[11px] shadow-xs border border-pink-100 shrink-0">5</span>
+                  <div>
+                    <span class="font-black text-[#002855] block">ул. Ходжанова, 5В, к. 1</span>
+                    <span class="text-[11px] text-slate-500">Бостандыкский р-н (ЖК Rams Luxury, Аль-Фараби)</span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-[11px] font-bold text-slate-400 group-hover:text-[#F24469] transition hidden sm:inline">На карте</span>
+                  <a href="https://2gis.kz/almaty/search/Алматы%20Ходжанова%205в%20Rams%20Luxury%20детский%20сад%20Зайка" target="_blank" onclick="event.stopPropagation();" class="px-2.5 py-1 rounded-lg bg-sky-100 hover:bg-[#00B4D8] text-[#00B4D8] hover:text-white font-extrabold text-[10px] transition">2GIS</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Форма записи на экскурсию -->
+        <div class="lg:col-span-6 bg-[#F9F8F5] rounded-3xl p-8 border border-[#E8E5DD]">
+          <h3 class="text-xl font-black text-[#002855] mb-2">Запись на экскурсию в любой филиал</h3>
+          <p class="text-xs text-slate-500 mb-6">Заполните форму, и мы свяжемся с вами в течение 10 минут</p>
+
+          <form onsubmit="event.preventDefault(); openTourModal();" class="space-y-4">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Ваше имя</label>
+              <input type="text" placeholder="Имя родителя" required class="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-xs font-medium focus:ring-2 focus:ring-[#F24469]">
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Телефон *</label>
+              <input type="tel" placeholder="+7 (7XX) XXX-XX-XX" required class="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-xs font-medium focus:ring-2 focus:ring-[#F24469]">
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Желаемый филиал</label>
+              <select class="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-xs font-bold text-[#002855]">
+                <option>Филиал №1: ул. Маркова, 9</option>
+                <option>Филиал №2: ул. Аманжол, 6 (бассейн, соль)</option>
+                <option>Филиал №3: ул. Кожамкулова, 149 (Есентай)</option>
+                <option>Филиал №4: мкр. Баянаул, 56 (бассейн, соль)</option>
+                <option>Филиал №5: ул. Ходжанова, 5в (Rams Luxury)</option>
+              </select>
+            </div>
+            <button type="submit" class="b-btn b-btn_pink w-full py-4 text-xs sm:text-sm font-extrabold shadow-lg">
+              <span>Записаться прямо сейчас</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- =========================================================================
+           ИНТЕРАКТИВНАЯ КАРТА 5 ФИЛИАЛОВ (С ПЕРЕКЛЮЧЕНИЕМ И ССЫЛКАМИ 2GIS И ЯНДЕКС)
+           ========================================================================= -->
+      <div id="branch-map-section" class="mt-14 bg-white rounded-3xl border border-[#E8E5DD] shadow-sm overflow-hidden">
+        
+        <!-- Шапка блока карты -->
+        <div class="p-6 sm:p-8 border-b border-slate-100 flex flex-col lg:flex-row lg:items-center justify-between gap-5 bg-gradient-to-r from-white via-white to-pink-50/30">
+          <div>
+            <div class="flex items-center gap-2.5">
+              <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#FDF0F3] text-base border border-pink-200 shadow-xs">
+                🐰
+              </span>
+              <h3 class="text-xl sm:text-2xl font-black text-[#002855] tracking-tight">
+                Все 5 филиалов сети «ЗАЙКА» на карте Алматы
+              </h3>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-500 mt-1">
+              Нажмите на метку садика, чтобы посмотреть фотографии филиала, особенности и проложить удобный маршрут
+            </p>
+          </div>
+
+          <!-- Табы переключения: Интерактивная карта с зайчиками / Яндекс.Карты -->
+          <div class="flex items-center gap-2 bg-[#F9F8F5] p-1.5 rounded-2xl border border-slate-200 shrink-0">
+            <button id="btn-map-interactive" onclick="switchMapMode('interactive')" class="flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition shadow-sm bg-white text-[#002855]">
+              <span>🐰</span>
+              <span>Интерактивная карта</span>
+            </button>
+            <button id="btn-map-yandex" onclick="switchMapMode('yandex')" class="flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition text-slate-500 hover:text-[#002855]">
+              <span>🗺️</span>
+              <span>Яндекс.Карты</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Быстрые фильтры-кнопки по филиалам прямо над картой -->
+        <div class="px-6 py-3.5 bg-[#F9F8F5]/80 border-b border-slate-200/80 flex flex-wrap items-center gap-2">
+          <span class="text-[11px] font-black uppercase tracking-wider text-slate-400 mr-1 flex items-center gap-1">
+            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-[#F24469]"></i>
+            Филиал:
+          </span>
+          <button onclick="focusBranchMap('all')" data-branch-pill="all" class="map-branch-pill px-3.5 py-1.5 rounded-xl text-xs font-bold bg-[#002855] text-white shadow-xs transition">
+            Все сады (5)
+          </button>
+          <button onclick="focusBranchMap('markova')" data-branch-pill="markova" class="map-branch-pill px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-700 hover:bg-pink-50 hover:text-[#F24469] border border-slate-200 transition">
+            №1 Маркова, 9
+          </button>
+          <button onclick="focusBranchMap('amanzhol')" data-branch-pill="amanzhol" class="map-branch-pill px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-700 hover:bg-pink-50 hover:text-[#F24469] border border-slate-200 transition">
+            №2 Аманжол, 6 (бассейн, соль)
+          </button>
+          <button onclick="focusBranchMap('kozhamkulova')" data-branch-pill="kozhamkulova" class="map-branch-pill px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-700 hover:bg-pink-50 hover:text-[#F24469] border border-slate-200 transition">
+            №3 Кожамкулова, 149 (Есентай)
+          </button>
+          <button onclick="focusBranchMap('bayanaul')" data-branch-pill="bayanaul" class="map-branch-pill px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-700 hover:bg-pink-50 hover:text-[#F24469] border border-slate-200 transition">
+            №4 Баянаул, 56 (бассейн, соль)
+          </button>
+          <button onclick="focusBranchMap('hodzhanova')" data-branch-pill="hodzhanova" class="map-branch-pill px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-700 hover:bg-pink-50 hover:text-[#F24469] border border-slate-200 transition">
+            №5 Ходжанова, 5В (Rams)
+          </button>
+        </div>
+
+        <!-- Контейнер карты -->
+        <div class="relative w-full h-[480px] sm:h-[560px] bg-slate-100 overflow-hidden">
+          
+          <!-- Leaflet интерактивная карта -->
+          <div id="interactive-map" class="w-full h-full z-10"></div>
+
+          <!-- Яндекс Карта (iframe виджет с 5 метками) -->
+          <div id="yandex-map-container" class="w-full h-full absolute inset-0 hidden z-20 bg-slate-100">
+            <iframe id="yandex-map-iframe" src="" class="w-full h-full border-0" allowfullscreen="true" loading="lazy"></iframe>
+          </div>
+
+        </div>
+
+        <!-- Нижняя плашка карты с кнопками 2GIS и Яндекс -->
+        <div class="p-4 sm:p-6 bg-slate-50 border-t border-slate-200/80 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="flex items-center gap-2.5 text-xs text-slate-600 font-medium">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 shrink-0"></span>
+            <span>Постройте точный маршрут на авто, автобусе или пешком в мобильных приложениях:</span>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3">
+            <a href="https://2gis.kz/almaty/search/детский%20сад%20Зайка" target="_blank" class="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#00B4D8] hover:bg-[#0096B4] text-white text-xs font-bold shadow-sm transition">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <span>Открыть всю сеть в 2GIS</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+
+            <a href="https://yandex.kz/maps/162/almaty/search/детский%20сад%20Зайка" target="_blank" class="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#FC3F1D] hover:bg-[#E03212] text-white text-xs font-bold shadow-sm transition">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <span>В Яндекс.Картах</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       13. ФИРМЕННЫЙ ПОДВАЛ (SUN SCHOOL .b-foot)
+       ========================================================================= -->
+  <footer class="bg-[#002855] text-white pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+        
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <span class="text-3xl">🐰</span>
+            <span class="text-2xl font-black tracking-tight">ЗАЙКА</span>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Сеть билингвальных детских садов в Алматы. Лицензированное дошкольное образование, бассейны, соляные комнаты и забота о здоровье с 2012 года.
+          </p>
+          <div class="flex items-center gap-3">
+            <a href="https://www.instagram.com/zaikasadik.kz" target="_blank" class="w-9 h-9 rounded-full bg-white/10 hover:bg-[#F24469] flex items-center justify-center transition" title="Instagram @zaikasadik.kz">
+              <svg class="w-4 h-4 shrink-0 fill-none stroke-current stroke-2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://wa.me/77001360606" target="_blank" class="w-9 h-9 rounded-full bg-white/10 hover:bg-emerald-500 flex items-center justify-center transition">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+            </a>
+            <a href="tel:+77001360606" class="w-9 h-9 rounded-full bg-white/10 hover:bg-[#F24469] flex items-center justify-center transition">
+              <i data-lucide="phone" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-extrabold text-xs uppercase tracking-wider text-[#FFB300]">Филиалы в Алматы</h4>
+          <ul class="text-xs text-slate-300 space-y-2">
+            <li><button onclick="openBranchModal('markova')" class="hover:text-white transition">Филиал №1: ул. Маркова, 9</button></li>
+            <li><button onclick="openBranchModal('amanzhol')" class="hover:text-white transition">Филиал №2: ул. Аманжол, 6</button></li>
+            <li><button onclick="openBranchModal('kozhamkulova')" class="hover:text-white transition">Филиал №3: ул. Кожамкулова, 149</button></li>
+            <li><button onclick="openBranchModal('bayanaul')" class="hover:text-white transition">Филиал №4: мкр. Баянаул, 56</button></li>
+            <li><button onclick="openBranchModal('hodzhanova')" class="hover:text-white transition">Филиал №5: ул. Ходжанова, 5в (Rams)</button></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-extrabold text-xs uppercase tracking-wider text-[#FFB300]">Родителям</h4>
+          <ul class="text-xs text-slate-300 space-y-2">
+            <li><button onclick="openModal('modal-menu')" class="hover:text-white transition">5-разовое сбалансированное меню</button></li>
+            <li><button onclick="openModal('modal-schedule')" class="hover:text-white transition">Распорядок дня</button></li>
+            <li><button onclick="openModal('modal-docs')" class="hover:text-white transition">Список документов для поступления</button></li>
+            <li><button onclick="openTourModal()" class="hover:text-white transition">Запись на просмотр садика</button></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-extrabold text-xs uppercase tracking-wider text-[#FFB300]">Гос. субсидии DamuBala</h4>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Все филиалы прошли государственную аттестацию. Экономия 50 000 ₸ в месяц для каждого ребенка от 2 лет.
+          </p>
+          <div class="p-3 bg-white/10 rounded-xl">
+            <span class="text-emerald-300 font-bold text-xs block">Субсидия 50 000 ₸/мес</span>
+            <span class="text-[11px] text-slate-300">Официально по ваучеру</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <p>© 2026 Частные детские сады «ЗАЙКА». Все права защищены.</p>
+        <p>г. Алматы, Республика Казахстан</p>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- =========================================================================
+       ПЛАВАЮЩИЕ КНОПКИ ДЕЙСТВИЯ (SUN SCHOOL STYLE)
+       ========================================================================= -->
+  <div class="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-3">
+    <button onclick="openModal('modal-callback')" class="w-12 h-12 rounded-full bg-white text-[#002855] shadow-xl border border-slate-200 flex items-center justify-center hover:scale-110 transition" title="Заказать звонок">
+      <i data-lucide="phone" class="w-5 h-5 text-[#F24469]"></i>
+    </button>
+    <a href="https://wa.me/77001360606?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9F%D0%B8%D1%88%D1%83%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20zaikasadik.kz" target="_blank" class="w-14 h-14 rounded-full bg-[#25D366] text-white shadow-2xl flex items-center justify-center hover:scale-110 transition animate-pulse-glow" title="Написать в WhatsApp">
+      <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+    </a>
+  </div>
+
+
+  <!-- =========================================================================
+       ВСПЛЫВАЮЩИЕ ОКНА (SUN SCHOOL MODALS)
+       ========================================================================= -->
+
+  <!-- МОДАЛКА 1: ЗАПИСЬ НА ЭКСКУРСИЮ (#signUpTour в Sun School) -->
+  <div id="modal-tour" class="modal-overlay fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="modal-container bg-white w-full max-w-lg rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-100 max-h-[92vh] overflow-y-auto">
+      
+      <div class="flex justify-between items-center mb-6">
+        <div>
+          <h3 class="text-xl sm:text-2xl font-black text-[#002855]">Запись на экскурсию</h3>
+          <p class="text-xs text-slate-500">Познакомьтесь с детским садом «ЗАЙКА» лично</p>
+        </div>
+        <button onclick="closeModal('modal-tour')" class="w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-500 flex items-center justify-center transition">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <form id="tour-form" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Выберите филиал в Алматы</label>
+          <select id="tour-branch-select" class="w-full px-4 py-3 bg-[#F9F8F5] border border-slate-200 rounded-xl text-xs sm:text-sm font-bold text-[#002855] focus:ring-2 focus:ring-[#F24469] focus:outline-none">
+            <option value="Филиал №1 Маркова, 9">Филиал №1: ул. Маркова, 9 (Бостандыкский)</option>
+            <option value="Филиал №2 Аманжол, 6">Филиал №2: ул. Аманжол, 6 (Ауэзовский, бассейн, соль)</option>
+            <option value="Филиал №3 Кожамкулова, 149">Филиал №3: ул. Кожамкулова, 149 (Алмалинский, Есентай)</option>
+            <option value="Филиал №4 Баянаул, 56">Филиал №4: мкр. Баянаул, 56 (Ауэзовский, бассейн, соль)</option>
+            <option value="Филиал №5 Ходжанова, 5в (Rams)">Филиал №5: ул. Ходжанова, 5в (ЖК Rams Luxury)</option>
+          </select>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Ваше имя *</label>
+            <input id="tour-name" type="text" placeholder="Имя" required class="w-full px-4 py-3 bg-[#F9F8F5] border border-slate-200 rounded-xl text-xs font-medium focus:ring-2 focus:ring-[#F24469]">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Номер телефона *</label>
+            <input id="tour-phone" type="tel" placeholder="+7 (7XX) XXX-XX-XX" required class="w-full px-4 py-3 bg-[#F9F8F5] border border-slate-200 rounded-xl text-xs font-medium focus:ring-2 focus:ring-[#F24469]">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Возраст ребенка</label>
+            <input id="tour-age" type="text" placeholder="Например: 3 года" class="w-full px-4 py-3 bg-[#F9F8F5] border border-slate-200 rounded-xl text-xs font-medium focus:ring-2 focus:ring-[#F24469]">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Удобная дата</label>
+            <input id="tour-date" type="date" class="w-full px-4 py-3 bg-[#F9F8F5] border border-slate-200 rounded-xl text-xs font-medium focus:ring-2 focus:ring-[#F24469]">
+          </div>
+        </div>
+
+        <div class="pt-2">
+          <button type="submit" class="b-btn b-btn_pink w-full py-4 text-sm font-extrabold shadow-lg">
+            <span>Отправить заявку в WhatsApp</span>
+          </button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+
+  <!-- МОДАЛКА 2: ДЕТАЛИ ФИЛИАЛА -->
+  <div id="modal-branch" class="modal-overlay fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="modal-container bg-white w-full max-w-2xl rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-100 max-h-[92vh] overflow-y-auto relative">
+      <button onclick="closeModal('modal-branch')" class="absolute top-5 right-5 z-10 w-9 h-9 rounded-full bg-black/40 hover:bg-black/60 text-white flex items-center justify-center transition">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      <div id="branch-modal-content"></div>
+    </div>
+  </div>
+
+
+  <!-- МОДАЛКА 3: ОБРАТНЫЙ ЗВОНОК (#call в Sun School) -->
+  <div id="modal-callback" class="modal-overlay fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="modal-container bg-white w-full max-w-md rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-100">
+      <div class="flex justify-between items-center mb-6">
+        <div>
+          <h3 class="text-xl font-black text-[#002855]">Заказать звонок</h3>
+          <p class="text-xs text-slate-500">Мы перезвоним в течение 10 минут</p>
+        </div>
+        <button onclick="closeModal('modal-callback')" class="w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-500 flex items-center justify-center transition">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <form onsubmit="event.preventDefault(); closeModal('modal-callback'); showSuccessToast('Спасибо! Мы скоро перезвоним вам.');" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Ваше имя</label>
+          <input type="text" placeholder="Имя" class="w-full px-4 py-3 bg-[#F9F8F5] border border-slate-200 rounded-xl text-xs font-medium focus:ring-2 focus:ring-[#F24469]">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Номер телефона *</label>
+          <input type="tel" placeholder="+7 (7XX) XXX-XX-XX" required class="w-full px-4 py-3 bg-[#F9F8F5] border border-slate-200 rounded-xl text-xs font-medium focus:ring-2 focus:ring-[#F24469]">
+        </div>
+        <button type="submit" class="b-btn b-btn_pink w-full py-3.5 text-xs sm:text-sm font-extrabold shadow-md">
+          <span>Перезвоните мне</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- МОДАЛКА 4: 5-РАЗОВОЕ МЕНЮ -->
+  <div id="modal-menu" class="modal-overlay fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="modal-container bg-white w-full max-w-2xl rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-100 max-h-[92vh] overflow-y-auto">
+      <div class="flex justify-between items-center mb-6">
+        <div>
+          <h3 class="text-xl sm:text-2xl font-black text-[#002855]">5-разовое здоровое меню</h3>
+          <p class="text-xs text-slate-500">Собственная кухня и блюда для деток-аллергиков</p>
+        </div>
+        <button onclick="closeModal('modal-menu')" class="w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-500 flex items-center justify-center transition">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div class="space-y-3.5 text-xs sm:text-sm text-slate-700">
+        <div class="p-4 bg-[#FFF8E1] rounded-2xl border border-[#FFB300]/20">
+          <div class="flex justify-between items-center mb-1">
+            <span class="font-extrabold text-[#002855]">09:00 — Завтрак</span>
+            <span class="b-tag_orangeLight">Энергия утра</span>
+          </div>
+          <p class="text-xs text-slate-600">Молочные каши (овсяная, рисовая, гречневая), омлеты, творожные запеканки, какао с молоком, бутерброды со сливочным маслом и сыром.</p>
+        </div>
+
+        <div class="p-4 bg-[#E8F8F2] rounded-2xl border border-emerald-200">
+          <div class="flex justify-between items-center mb-1">
+            <span class="font-extrabold text-[#002855]">10:30 — Витаминный второй завтрак</span>
+            <span class="b-tag_greenLight">Иммунитет</span>
+          </div>
+          <p class="text-xs text-slate-600">Свежевыжатые соки, ягодные морсы, сезонные фрукты (яблоки, бананы, груши, мандарины), компоты без сахара.</p>
+        </div>
+
+        <div class="p-4 bg-[#E0F7FA] rounded-2xl border border-[#00B4D8]/20">
+          <div class="flex justify-between items-center mb-1">
+            <span class="font-extrabold text-[#002855]">12:30 — Полноценный сытный обед</span>
+            <span class="px-2 py-0.5 bg-[#00B4D8]/20 text-[#002855] text-[11px] font-bold rounded-full">Сытный обед</span>
+          </div>
+          <p class="text-xs text-slate-600">Первое: домашний суп-лапша, борщ, чечевичный крем-суп. Второе: паровые котлеты, тефтели из индейки/говядины, запеченное рыбное филе с пюре или рисом. Овощные салаты.</p>
+        </div>
+
+        <div class="p-4 bg-[#FDF0F3] rounded-2xl border border-[#F24469]/20">
+          <div class="flex justify-between items-center mb-1">
+            <span class="font-extrabold text-[#002855]">15:30 — Полдник после сна</span>
+            <span class="b-tag_rating">Свежая выпечка</span>
+          </div>
+          <p class="text-xs text-slate-600">Свежая выпечка собственного производства (булочки с яблоком, ватрушки), творожки, ряженка, кефир, чай с молоком.</p>
+        </div>
+
+        <div class="p-4 bg-slate-50 rounded-2xl border border-slate-200">
+          <div class="flex justify-between items-center mb-1">
+            <span class="font-extrabold text-[#002855]">17:00 — Легкий ужин</span>
+            <span class="text-[11px] text-slate-500 font-bold">17:00</span>
+          </div>
+          <p class="text-xs text-slate-600">Овощные рагу, запеканки, суфле из птицы, чай из шиповника.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- МОДАЛКА 5: РАСПОРЯДОК ДНЯ -->
+  <div id="modal-schedule" class="modal-overlay fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="modal-container bg-white w-full max-w-xl rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-100 max-h-[92vh] overflow-y-auto">
+      <div class="flex justify-between items-center mb-6">
+        <h3 class="text-xl sm:text-2xl font-black text-[#002855]">Распорядок дня сети «ЗАЙКА»</h3>
+        <button onclick="closeModal('modal-schedule')" class="w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-500 flex items-center justify-center transition">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div class="space-y-2.5 text-xs sm:text-sm">
+        <div class="flex items-center gap-4 p-3 rounded-xl bg-slate-50"><span class="font-black text-[#F24469] w-28 shrink-0">07:30 – 08:45</span><span>Прием деток, утренний осмотр, игры</span></div>
+        <div class="flex items-center gap-4 p-3 rounded-xl bg-[#FFF8E1]"><span class="font-black text-amber-700 w-28 shrink-0">08:45 – 09:00</span><span>Музыкальная зарядка</span></div>
+        <div class="flex items-center gap-4 p-3 rounded-xl bg-slate-50"><span class="font-black text-[#F24469] w-28 shrink-0">09:00 – 09:30</span><span>Завтрак</span></div>
+        <div class="flex items-center gap-4 p-3 rounded-xl bg-[#E0F7FA]"><span class="font-black text-[#00B4D8] w-28 shrink-0">09:30 – 10:30</span><span>1-й блок занятий (английский Step by Step / казахский)</span></div>
+        <div class="flex items-center gap-4 p-3 rounded-xl bg-[#E8F8F2]"><span class="font-black text-emerald-700 w-28 shrink-0">10:30 – 10:50</span><span>Витаминный второй завтрак</span></div>
+        <div class="flex items-center gap-4 p-3 rounded-xl bg-[#FDF0F3]"><span class="font-black text-[#F24469] w-28 shrink-0">10:50 – 11:30</span><span>2-й блок занятий (айкидо / бассейн / логопед / арт)</span></div>
+        <div class="flex items-center gap-4 p-3 rounded-xl bg-slate-50"><span class="font-black text-[#F24469] w-28 shrink-0">11:30 – 12:30</span><span>Прогулка на свежем воздухе</span></div>
+        <div class="flex items-center gap-4 p-3 rounded-xl bg-slate-50"><span class="font-black text-[#F24469] w-28 shrink-0">12:30 – 13:00</span><span>Сытный обед</span></div>
+        <div class="flex items-center gap-4 p-3 rounded-xl bg-indigo-50"><span class="font-black text-indigo-700 w-28 shrink-0">13:00 – 15:00</span><span>Тихий час (сон, сказка)</span></div>
+        <div class="flex items-center gap-4 p-3 rounded-xl bg-slate-50"><span class="font-black text-[#F24469] w-28 shrink-0">15:30 – 16:00</span><span>Полдник</span></div>
+        <div class="flex items-center gap-4 p-3 rounded-xl bg-slate-50"><span class="font-black text-[#F24469] w-28 shrink-0">16:00 – 17:00</span><span>Кружки (шахматы, робототехника, хореография)</span></div>
+        <div class="flex items-center gap-4 p-3 rounded-xl bg-slate-50"><span class="font-black text-[#F24469] w-28 shrink-0">17:00 – 17:30</span><span>Ужин</span></div>
+        <div class="flex items-center gap-4 p-3 rounded-xl bg-slate-50"><span class="font-black text-[#F24469] w-28 shrink-0">17:30 – 19:00</span><span>Вечерняя прогулка, уход домой (дежурная группа до 20:00)</span></div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- МОДАЛКА 6: ЛАЙТБОКС -->
+  <div id="modal-lightbox" class="modal-overlay fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="modal-container relative max-w-4xl w-full flex flex-col items-center">
+      <button onclick="closeModal('modal-lightbox')" class="absolute -top-12 right-0 text-white hover:text-[#F24469] transition">
+        <i data-lucide="x" class="w-8 h-8"></i>
+      </button>
+      <img id="lightbox-image" src="" alt="Фото садика" class="max-h-[80vh] w-auto rounded-3xl object-contain shadow-2xl border border-white/10">
+      <p id="lightbox-caption" class="text-white/80 text-sm mt-3 font-bold text-center"></p>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
