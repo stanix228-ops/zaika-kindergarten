@@ -237,6 +237,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initFAQ();
   initBranchMap();
+  initHeroVideoPerformance();
 });
 
 // Рендеринг карточек филиалов с точными услугами из Instagram
@@ -253,12 +254,12 @@ function renderBranchesList(districtFilter = 'all') {
       
       <!-- Фото филиала в стиле Sun School с зайчиком и тематикой -->
       <div class="relative h-48 sm:h-52 w-full overflow-hidden bg-slate-100 group cursor-pointer" onclick="openBranchModal('${branch.id}')">
-        <img src="${branch.image}" alt="${branch.name}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+        <img src="${branch.image}" alt="${branch.name}" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
         <div class="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-black/15"></div>
         
         <!-- Верхние бейджи -->
         <div class="absolute top-3 left-3 right-3 flex items-center justify-between">
-          <span class="px-3 py-1 rounded-full bg-white/95 backdrop-blur-sm text-[11px] font-black text-[#F24469] shadow-sm">
+          <span class="px-3 py-1 rounded-full bg-white/95 text-[11px] font-black text-[#F24469] shadow-sm">
             Филиал №${branch.num}
           </span>
           <div class="b-tag_rating shrink-0 shadow-sm bg-white/95">
@@ -945,9 +946,14 @@ function startReviewsAutoScroll() {
   reviewsAutoScrollTimer = setInterval(() => {
     const track = document.getElementById('reviews-track');
     if (!track) return;
+    // Проверка видимости: не скроллим, если отзывов нет в видимой области экрана
+    if (document.hidden) return;
+    const rect = track.getBoundingClientRect();
+    if (rect.bottom < 0 || rect.top > window.innerHeight) return;
+
     const cardWidth = track.firstElementChild ? track.firstElementChild.offsetWidth + 24 : 400;
     
-    // Check if reached end
+    // Проверка достижения конца списка
     if (track.scrollLeft + track.clientWidth >= track.scrollWidth - 10) {
       track.scrollTo({ left: 0, behavior: 'smooth' });
     } else {
@@ -965,7 +971,7 @@ function pauseReviewsAutoScroll() {
   if (text) text.textContent = 'Пауза (уберите курсор для возобновления)';
 }
 
-// Enable drag-to-scroll on reviews track
+// Enable drag-to-scroll on reviews track с requestAnimationFrame
 function initReviewsDraggable() {
   const track = document.getElementById('reviews-track');
   if (!track) return;
@@ -973,6 +979,7 @@ function initReviewsDraggable() {
   let isDown = false;
   let startX;
   let scrollLeft;
+  let rafId = null;
 
   track.addEventListener('mousedown', (e) => {
     isDown = true;
@@ -993,9 +1000,12 @@ function initReviewsDraggable() {
   track.addEventListener('mousemove', (e) => {
     if (!isDown) return;
     e.preventDefault();
-    const x = e.pageX - track.offsetLeft;
-    const walk = (x - startX) * 1.5;
-    track.scrollLeft = scrollLeft - walk;
+    if (rafId) cancelAnimationFrame(rafId);
+    rafId = requestAnimationFrame(() => {
+      const x = e.pageX - track.offsetLeft;
+      const walk = (x - startX) * 1.5;
+      track.scrollLeft = scrollLeft - walk;
+    });
   });
 
   // Touch events for mobile
@@ -1009,6 +1019,24 @@ function initReviewsDraggable() {
 
   // Start auto scroll initially
   startReviewsAutoScroll();
+}
+
+// Автоматическая пауза видео в Hero при скролле вниз для 100% плавности 60-120 FPS
+function initHeroVideoPerformance() {
+  const heroVideo = document.querySelector('section video');
+  if (!heroVideo || !('IntersectionObserver' in window)) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        if (heroVideo.paused) heroVideo.play().catch(() => {});
+      } else {
+        if (!heroVideo.paused) heroVideo.pause();
+      }
+    });
+  }, { threshold: 0.1 });
+
+  observer.observe(heroVideo);
 }
 
 // Call on DOM ready

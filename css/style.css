@@ -37,16 +37,35 @@
 body {
   font-family: var(--font-main);
   background-color: var(--ss-bg-light);
+  color: var(--ss-text-main);
+  overflow-x: hidden;
+  line-height: 1.5;
+  position: relative;
+}
+
+/* Фирменный паттерн с аппаратным GPU-ускорением (изолирован от репейнтов при скролле) */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   background-image: 
     linear-gradient(rgba(250, 248, 244, 0.88), rgba(250, 248, 244, 0.88)),
     url('../images/zaika_pattern.jpg');
   background-repeat: repeat;
   background-size: 320px 320px;
-  background-attachment: fixed;
-  color: var(--ss-text-main);
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  line-height: 1.5;
+  pointer-events: none;
+  z-index: -1;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+
+/* Аппаратная оптимизация рендеринга секций при скролле */
+.cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 750px;
 }
 
 /* Фирменные кнопки Sun School (.b-btn) */
@@ -369,8 +388,10 @@ body {
   }
 }
 
-.animate-float-mascot {
+.animate-float-mascot,
+.animate-float {
   animation: floatMascot 4s ease-in-out infinite;
+  will-change: transform;
 }
 
 .mascot-frame-shadow {
@@ -406,6 +427,7 @@ body {
   background: rgba(242, 68, 105, 0.4);
   animation: bunny-ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
   z-index: 1;
+  will-change: transform, opacity;
 }
 
 @keyframes bunny-ping {
