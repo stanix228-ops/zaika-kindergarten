@@ -1686,26 +1686,26 @@
       <div id="branch-map-section" class="mt-14 bg-white rounded-3xl border border-[#E8E5DD] shadow-sm overflow-hidden">
         
         <!-- Шапка блока карты -->
-        <div class="p-6 sm:p-8 border-b border-slate-100 flex flex-col lg:flex-row lg:items-center justify-between gap-5 bg-gradient-to-r from-white via-white to-pink-50/30">
+        <div class="p-6 sm:p-8 border-b border-slate-100 flex flex-col lg:flex-row lg:items-center justify-between gap-5 bg-gradient-to-r from-white via-white to-emerald-50/30">
           <div>
             <div class="flex items-center gap-2.5">
-              <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#FDF0F3] text-base border border-pink-200 shadow-xs">
+              <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#E8F5E9] text-base border border-emerald-200 shadow-xs">
                 🐰
               </span>
               <h3 class="text-xl sm:text-2xl font-black text-[#002855] tracking-tight">
-                Все 5 филиалов сети «ЗАЙКА» на карте Алматы
+                Все 5 филиалов сети «ЗАЙКА» на карте 2ГИС
               </h3>
             </div>
             <p class="text-xs sm:text-sm text-slate-500 mt-1">
-              Нажмите на метку садика, чтобы посмотреть фотографии филиала, особенности и проложить удобный маршрут
+              Официальная карта 2ГИС Алматы: кликните по зайчику, чтобы посмотреть фотографии филиала, бассейн, соляную шахту и построить маршрут
             </p>
           </div>
 
-          <!-- Табы переключения: Интерактивная карта с зайчиками / Яндекс.Карты -->
+          <!-- Табы переключения: Интерактивная карта 2ГИС с зайчиками / Яндекс.Карты -->
           <div class="flex items-center gap-2 bg-[#F9F8F5] p-1.5 rounded-2xl border border-slate-200 shrink-0">
             <button id="btn-map-interactive" onclick="switchMapMode('interactive')" class="flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition shadow-sm bg-white text-[#002855]">
-              <span>🐰</span>
-              <span>Интерактивная карта</span>
+              <span class="w-2.5 h-2.5 rounded-full bg-[#00A86B] shadow-xs"></span>
+              <span>2ГИС (Интерактивная)</span>
             </button>
             <button id="btn-map-yandex" onclick="switchMapMode('yandex')" class="flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition text-slate-500 hover:text-[#002855]">
               <span>🗺️</span>
@@ -1743,7 +1743,7 @@
         <!-- Контейнер карты -->
         <div class="relative w-full h-[480px] sm:h-[560px] bg-slate-100 overflow-hidden">
           
-          <!-- Leaflet интерактивная карта -->
+          <!-- Leaflet интерактивная карта с тайлами 2ГИС Алматы -->
           <div id="interactive-map" class="w-full h-full z-10"></div>
 
           <!-- Яндекс Карта (iframe виджет с 5 метками) -->
@@ -1761,9 +1761,9 @@
           </div>
 
           <div class="flex flex-wrap items-center gap-3">
-            <a href="https://2gis.kz/almaty/search/детский%20сад%20Зайка" target="_blank" class="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#00B4D8] hover:bg-[#0096B4] text-white text-xs font-bold shadow-sm transition">
+            <a href="https://2gis.kz/almaty/search/детский%20сад%20Зайка" target="_blank" class="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#00A86B] hover:bg-[#008f5a] text-white text-xs font-bold shadow-sm transition">
               <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              <span>Открыть всю сеть в 2GIS</span>
+              <span>Открыть всю сеть в 2ГИС</span>
               <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
             </a>
 

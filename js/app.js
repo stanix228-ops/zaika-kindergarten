@@ -755,18 +755,21 @@ function initBranchMap() {
     return;
   }
 
-  // Создаем карту с центром в Алматы
+  // Создаем карту 2ГИС с центром в Алматы
   branchMap = L.map('interactive-map', {
-    center: [43.235, 76.890],
+    center: [43.235, 76.885],
     zoom: 12,
+    minZoom: 10,
+    maxZoom: 17,
     scrollWheelZoom: false
   });
 
-  // Премиальные светлые пастельные тайлы CartoDB Voyager
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>',
-    subdomains: 'abcd',
-    maxZoom: 19
+  // Официальные светлые тайлы 2ГИС (Алматы)
+  L.tileLayer('https://tile{s}.maps.2gis.com/tiles?x={x}&y={y}&z={z}&v=1.1', {
+    subdomains: ['0', '1', '2', '3'],
+    attribution: 'Данные карты &copy; <a href="https://2gis.kz/almaty" target="_blank" rel="noopener" class="font-bold text-[#00A86B]">2ГИС</a>',
+    maxZoom: 17,
+    minZoom: 10
   }).addTo(branchMap);
 
   // Добавляем фирменные маркеры с зайчиками
@@ -790,7 +793,7 @@ function initBranchMap() {
       popupAnchor: [0, -50]
     });
 
-    // Всплывающее окно в стиле Sun School
+    // Всплывающее окно в стиле Sun School с интеграцией 2ГИС
     const popupContent = `
       <div class="p-3.5 max-w-[280px] font-sans">
         <div class="relative h-28 w-full rounded-xl overflow-hidden mb-3 bg-slate-100">
@@ -798,8 +801,8 @@ function initBranchMap() {
           <span class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-white/95 text-[10px] font-black text-[#F24469] shadow-xs">
             Филиал №${branch.num}
           </span>
-          <span class="absolute top-2 right-2 px-2 py-0.5 rounded-md bg-white/95 text-[10px] font-bold text-slate-700 shadow-xs">
-            ★ ${branch.rating}
+          <span class="absolute top-2 right-2 px-2 py-0.5 rounded-md bg-white/95 text-[10px] font-bold text-[#00A86B] shadow-xs flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#00A86B]"></span> 2ГИС ★ ${branch.rating}
           </span>
         </div>
 
@@ -817,8 +820,8 @@ function initBranchMap() {
         </div>
 
         <div class="grid grid-cols-2 gap-2 mb-2">
-          <a href="https://2gis.kz/almaty/search/${encodeURIComponent(branch.mapQuery)}" target="_blank" class="flex items-center justify-center gap-1 py-2 px-2 rounded-xl bg-[#00B4D8] hover:bg-[#0096B4] text-white text-[11px] font-extrabold shadow-xs transition">
-            <span>2GIS маршрут</span>
+          <a href="https://2gis.kz/almaty/search/${encodeURIComponent(branch.mapQuery)}" target="_blank" class="flex items-center justify-center gap-1 py-2 px-2 rounded-xl bg-[#00A86B] hover:bg-[#008f5a] text-white text-[11px] font-extrabold shadow-xs transition">
+            <span>🗺️ 2ГИС</span>
           </a>
           <a href="https://yandex.kz/maps/162/almaty/search/${encodeURIComponent(branch.yandexQuery || branch.mapQuery)}" target="_blank" class="flex items-center justify-center gap-1 py-2 px-2 rounded-xl bg-[#FC3F1D] hover:bg-[#E03212] text-white text-[11px] font-extrabold shadow-xs transition">
             <span>Яндекс.Карты</span>
@@ -878,7 +881,13 @@ function focusBranchMap(branchId) {
   if (!branchMap) return;
 
   if (branchId === 'all') {
-    branchMap.flyTo([43.235, 76.890], 12, { duration: 1.2 });
+    const markers = Object.values(branchMarkers);
+    if (markers.length > 0) {
+      const group = L.featureGroup(markers);
+      branchMap.fitBounds(group.getBounds().pad(0.15), { duration: 1.2 });
+    } else {
+      branchMap.flyTo([43.235, 76.885], 12, { duration: 1.2 });
+    }
     branchMap.closePopup();
   } else {
     const branch = BRANCHES.find(b => b.id === branchId);
@@ -888,7 +897,7 @@ function focusBranchMap(branchId) {
         if (branchMarkers[branchId]) {
           branchMarkers[branchId].openPopup();
         }
-      }, 700);
+      }, 750);
     }
   }
 }
