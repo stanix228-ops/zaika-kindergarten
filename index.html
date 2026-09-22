@@ -179,9 +179,21 @@
   <!-- =========================================================================
        2. ГЛАВНЫЙ ЭКРАН В СТИЛЕ SUN SCHOOL (ПОЛНОФОРМАТНОЕ ФОТО С ЗАМЫЛЕНИЕМ ПОД ТЕКСТ)
        ========================================================================= -->
-  <section class="relative text-[#1D2530] py-12 md:py-20 lg:py-24 overflow-hidden border-b border-[#E8E5DD] bg-cover bg-right sm:bg-[position:90%_center] lg:bg-right min-h-[640px] lg:min-h-[720px] flex items-center" style="background-image: url('images/zaika_hero_bg.jpg');">
-    <!-- Мягкий полупрозрачный градиент для кристальной читаемости текста на любых экранах -->
-    <div class="absolute inset-0 bg-gradient-to-r from-[#FFFDF9]/90 via-[#FFFDF9]/50 to-transparent pointer-events-none w-full sm:w-2/3 lg:w-[48%] z-0"></div>
+  <section class="relative text-[#1D2530] py-12 md:py-20 lg:py-24 overflow-hidden border-b border-[#E8E5DD] bg-cover bg-right min-h-[640px] lg:min-h-[720px] flex items-center" style="background-image: url('images/zaika_hero_poster.jpg');">
+    <!-- Фоновое видео во весь экран с плавным автовоспроизведением и постером -->
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+      poster="images/zaika_hero_poster.jpg"
+      class="absolute inset-0 w-full h-full object-cover object-[78%_center] sm:object-[84%_center] lg:object-right pointer-events-none z-0">
+      <source src="video/zaika_hero.mp4" type="video/mp4">
+    </video>
+
+    <!-- Мягкий полупрозрачный градиент для безупречной читаемости текста на любых экранах -->
+    <div class="absolute inset-0 bg-gradient-to-b from-[#FFFDF9]/90 via-[#FFFDF9]/60 to-[#FFFDF9]/30 sm:bg-gradient-to-r sm:from-[#FFFDF9]/95 sm:via-[#FFFDF9]/60 sm:to-transparent pointer-events-none w-full sm:w-3/4 lg:w-[50%] z-[1]"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
       
@@ -1880,6 +1892,12 @@
   <script src="js/app.js"></script>
   <script>
     lucide.createIcons();
+    // Надежный автозапуск видео на десктопах и мобильных
+    const heroVid = document.querySelector('section video');
+    if (heroVid) {
+      heroVid.muted = true;
+      heroVid.play().catch(() => {});
+    }
   </script>
 </body>
 </html>
