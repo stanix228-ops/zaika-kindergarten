@@ -1520,265 +1520,242 @@
 
 
   <!-- =========================================================================
-       12. КОНТАКТЫ И АДРЕСА 5 ФИЛИАЛОВ (SUN SCHOOL STYLE)
+       12. КОНТАКТЫ, ЗАПИСЬ И КАРТА 2ГИС (3 ПОДБЛОКА В ЕДИНОМ БЛОКЕ)
        ========================================================================= -->
   <section id="contacts" class="py-16 md:py-24 bg-white border-t border-[#E8E5DD] cv-auto">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+      <!-- Заголовок секции -->
+      <div class="text-center max-w-3xl mx-auto mb-12 space-y-2">
+        <span class="text-xs font-extrabold uppercase tracking-wider text-[#F24469] flex items-center justify-center gap-1.5">
+          <span>🐰</span> Контакты и расположение
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-black text-[#002855] tracking-tight">
+          Контакты сети «ЗАЙКА» и карта филиалов
+        </h2>
+        <p class="text-slate-500 text-xs sm:text-sm max-w-xl mx-auto">
+          5 лицензированных детских садов в Алматы. Выберите удобный канал связи, запишитесь на экскурсию или постройте маршрут в 2ГИС
+        </p>
+      </div>
+
+      <!-- ЕДИНЫЙ БОЛЬШОЙ БЛОК: 3 ПОДБЛОКА В ОДНОМ КОНТЕЙНЕРЕ -->
+      <div class="bg-[#F9F8F5] rounded-3xl border border-[#E8E5DD] shadow-sm overflow-hidden">
         
-        <div class="lg:col-span-6 space-y-6">
-          <h2 class="text-2xl sm:text-4xl font-black text-[#002855] tracking-tight">
-            Контакты сети детских садов «ЗАЙКА»
-          </h2>
-          <p class="text-slate-500 text-sm">
-            Выберите удобный филиал и запишитесь на персональную экскурсию
-          </p>
-
-          <div class="space-y-4">
-            <div class="p-5 bg-[#F9F8F5] rounded-2xl border border-slate-200 flex items-center justify-between">
-              <div>
-                <span class="text-xs text-slate-400 font-bold uppercase block">Единый телефон записи</span>
-                <a href="tel:+77001360606" class="text-xl font-black text-[#002855] hover:text-[#F24469] transition">+7 700 136 06 06</a>
-              </div>
-              <a href="tel:+77001360606" class="b-btn b-btn_pinkPrimary px-4 py-2 text-xs font-bold">Позвонить</a>
+        <!-- ВЕРХНИЙ РЯД: ПОДБЛОК 1 (КОНТАКТЫ) + ПОДБЛОК 2 (ФОРМА ЗАПИСИ) -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 border-b border-[#E8E5DD]">
+          
+          <!-- ПОДБЛОК 1: КОНТАКТЫ И СВЯЗЬ (lg:col-span-6) -->
+          <div class="lg:col-span-6 p-6 sm:p-8 lg:p-10 bg-white border-b lg:border-b-0 lg:border-r border-[#E8E5DD] flex flex-col justify-between space-y-6">
+            <div>
+              <span class="text-[11px] font-black uppercase tracking-wider text-[#F24469] flex items-center gap-1.5 mb-1">
+                <span class="w-2 h-2 rounded-full bg-[#F24469]"></span> Прямая связь
+              </span>
+              <h3 class="text-xl sm:text-2xl font-black text-[#002855] tracking-tight">
+                Контакты администрации
+              </h3>
+              <p class="text-slate-500 text-xs sm:text-sm mt-0.5">
+                Единый call-центр и оперативная поддержка родителей
+              </p>
             </div>
 
-            <div class="p-5 bg-[#E8F8F2] rounded-2xl border border-emerald-200 flex items-center justify-between">
-              <div>
-                <span class="text-xs text-emerald-700 font-bold uppercase block">Официальный WhatsApp</span>
-                <span class="text-base font-bold text-emerald-950">+7 700 136 06 06 (Чат с заведующей)</span>
-              </div>
-              <a href="https://wa.me/77001360606" target="_blank" class="b-btn bg-emerald-600 text-white hover:bg-emerald-700 px-4 py-2 text-xs font-bold">Написать</a>
-            </div>
+            <!-- Сетка контактов: 2x2 -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              
+              <!-- Телефон -->
+              <a href="tel:+77001360606" class="p-3.5 rounded-2xl bg-[#F9F8F5] hover:bg-pink-50/60 border border-slate-200/80 transition flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-white shadow-xs border border-pink-100 flex items-center justify-center text-[#F24469] shrink-0">
+                  <i data-lucide="phone" class="w-4 h-4 text-[#F24469]"></i>
+                </div>
+                <div class="min-w-0">
+                  <span class="text-[10px] text-slate-400 font-bold uppercase block leading-tight">Единый телефон</span>
+                  <span class="text-xs sm:text-sm font-black text-[#002855] group-hover:text-[#F24469] transition block truncate">+7 700 136 06 06</span>
+                </div>
+              </a>
 
-            <div class="p-5 bg-[#FDF0F3] rounded-2xl border border-pink-200 flex items-center justify-between">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#FFB300] via-[#F24469] to-[#833AB4] flex items-center justify-center text-white shadow-xs shrink-0">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <!-- WhatsApp -->
+              <a href="https://wa.me/77001360606" target="_blank" class="p-3.5 rounded-2xl bg-[#E8F8F2] hover:bg-[#d5f5e3] border border-emerald-200/80 transition flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-white shadow-xs border border-emerald-200 flex items-center justify-center text-emerald-600 shrink-0">
+                  <i data-lucide="message-circle" class="w-4 h-4"></i>
+                </div>
+                <div class="min-w-0">
+                  <span class="text-[10px] text-emerald-700 font-bold uppercase block leading-tight">WhatsApp чат</span>
+                  <span class="text-xs sm:text-sm font-black text-emerald-950 block truncate">Чат с заведующей</span>
+                </div>
+              </a>
+
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/zaikasadik.kz" target="_blank" class="p-3.5 rounded-2xl bg-[#FDF0F3] hover:bg-[#fae2e8] border border-pink-200/80 transition flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-white shadow-xs border border-pink-200 flex items-center justify-center text-pink-600 shrink-0">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                     <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                   </svg>
                 </div>
-                <div>
-                  <span class="text-xs text-pink-700 font-bold uppercase block">Официальный Instagram</span>
-                  <a href="https://www.instagram.com/zaikasadik.kz" target="_blank" class="text-base font-black text-[#002855] hover:text-[#F24469] transition">@zaikasadik.kz</a>
+                <div class="min-w-0">
+                  <span class="text-[10px] text-pink-700 font-bold uppercase block leading-tight">Instagram</span>
+                  <span class="text-xs sm:text-sm font-black text-[#002855] block truncate">@zaikasadik.kz</span>
+                </div>
+              </a>
+
+              <!-- Режим работы -->
+              <div class="p-3.5 rounded-2xl bg-[#FFF8E1] border border-amber-200/80 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-white shadow-xs border border-amber-200 flex items-center justify-center text-amber-600 shrink-0">
+                  <i data-lucide="clock" class="w-4 h-4"></i>
+                </div>
+                <div class="min-w-0">
+                  <span class="text-[10px] text-amber-800 font-bold uppercase block leading-tight">График работы</span>
+                  <span class="text-xs font-black text-[#002855] block">Пн–Пт: 07:30–19:00</span>
                 </div>
               </div>
-              <a href="https://www.instagram.com/zaikasadik.kz" target="_blank" class="b-btn b-btn_pink px-4 py-2 text-xs font-bold">Смотреть</a>
+
+            </div>
+
+            <!-- Компактные теги филиалов -->
+            <div class="pt-1">
+              <span class="text-[11px] font-bold text-slate-400 block mb-2">Быстрый фокус на филиалы:</span>
+              <div class="flex flex-wrap gap-1.5">
+                <button onclick="focusBranchMap('markova')" class="px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-pink-50 hover:text-[#F24469] text-slate-700 text-[11px] font-bold transition">№1 Маркова</button>
+                <button onclick="focusBranchMap('amanzhol')" class="px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-pink-50 hover:text-[#F24469] text-slate-700 text-[11px] font-bold transition">№2 Аманжол</button>
+                <button onclick="focusBranchMap('kozhamkulova')" class="px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-pink-50 hover:text-[#F24469] text-slate-700 text-[11px] font-bold transition">№3 Кожамкулова</button>
+                <button onclick="focusBranchMap('bayanaul')" class="px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-pink-50 hover:text-[#F24469] text-slate-700 text-[11px] font-bold transition">№4 Баянауыл</button>
+                <button onclick="focusBranchMap('hodzhanova')" class="px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-pink-50 hover:text-[#F24469] text-slate-700 text-[11px] font-bold transition">№5 Ходжанова</button>
+              </div>
             </div>
           </div>
 
-          <!-- 5 филиалов списком с кнопками 2GIS -->
-          <div class="space-y-3 pt-2">
-            <h4 class="font-black text-[#002855] text-sm uppercase tracking-wider">Филиалы в городе Алматы:</h4>
-            
-            <div class="space-y-2.5 text-xs text-slate-700">
-              <div onclick="focusBranchMap('markova')" class="p-3.5 bg-[#F9F8F5] hover:bg-pink-50/70 border border-slate-200/80 hover:border-pink-200 rounded-2xl flex justify-between items-center transition cursor-pointer group shadow-xs">
-                <div class="flex items-center gap-2.5">
-                  <span class="w-6 h-6 rounded-full bg-white text-[#F24469] flex items-center justify-center font-black text-[11px] shadow-xs border border-pink-100 shrink-0">1</span>
-                  <div>
-                    <span class="font-black text-[#002855] block">ул. Маркова, 9</span>
-                    <span class="text-[11px] text-slate-500">Бостандыкский р-н (выше бульвара Бухар Жырау)</span>
-                  </div>
-                </div>
-                <div class="flex items-center gap-2">
-                  <span class="text-[11px] font-bold text-slate-400 group-hover:text-[#F24469] transition hidden sm:inline">На карте</span>
-                  <a href="https://2gis.kz/almaty/search/Алматы%20Маркова%209%20детский%20сад%20Зайка" target="_blank" onclick="event.stopPropagation();" class="px-2.5 py-1 rounded-lg bg-sky-100 hover:bg-[#00B4D8] text-[#00B4D8] hover:text-white font-extrabold text-[10px] transition">2GIS</a>
-                </div>
-              </div>
-
-              <div onclick="focusBranchMap('amanzhol')" class="p-3.5 bg-[#F9F8F5] hover:bg-pink-50/70 border border-slate-200/80 hover:border-pink-200 rounded-2xl flex justify-between items-center transition cursor-pointer group shadow-xs">
-                <div class="flex items-center gap-2.5">
-                  <span class="w-6 h-6 rounded-full bg-white text-[#F24469] flex items-center justify-center font-black text-[11px] shadow-xs border border-pink-100 shrink-0">2</span>
-                  <div>
-                    <span class="font-black text-[#002855] block">ул. Аманжол, 6</span>
-                    <span class="text-[11px] text-slate-500">мкр. Мамыр-7 / Мамыр-4 (бассейн, соль)</span>
-                  </div>
-                </div>
-                <div class="flex items-center gap-2">
-                  <span class="text-[11px] font-bold text-slate-400 group-hover:text-[#F24469] transition hidden sm:inline">На карте</span>
-                  <a href="https://2gis.kz/almaty/search/Алматы%20Аманжол%206%20детский%20сад%20Зайка" target="_blank" onclick="event.stopPropagation();" class="px-2.5 py-1 rounded-lg bg-sky-100 hover:bg-[#00B4D8] text-[#00B4D8] hover:text-white font-extrabold text-[10px] transition">2GIS</a>
-                </div>
-              </div>
-
-              <div onclick="focusBranchMap('kozhamkulova')" class="p-3.5 bg-[#F9F8F5] hover:bg-pink-50/70 border border-slate-200/80 hover:border-pink-200 rounded-2xl flex justify-between items-center transition cursor-pointer group shadow-xs">
-                <div class="flex items-center gap-2.5">
-                  <span class="w-6 h-6 rounded-full bg-white text-[#F24469] flex items-center justify-center font-black text-[11px] shadow-xs border border-pink-100 shrink-0">3</span>
-                  <div>
-                    <span class="font-black text-[#002855] block">ул. Кожамкулова, 149</span>
-                    <span class="text-[11px] text-slate-500">Алмалинский р-н (набережная реки Есентай)</span>
-                  </div>
-                </div>
-                <div class="flex items-center gap-2">
-                  <span class="text-[11px] font-bold text-slate-400 group-hover:text-[#F24469] transition hidden sm:inline">На карте</span>
-                  <a href="https://2gis.kz/almaty/search/Алматы%20Кожамкулова%20149%20детский%20сад%20Зайка" target="_blank" onclick="event.stopPropagation();" class="px-2.5 py-1 rounded-lg bg-sky-100 hover:bg-[#00B4D8] text-[#00B4D8] hover:text-white font-extrabold text-[10px] transition">2GIS</a>
-                </div>
-              </div>
-
-              <div onclick="focusBranchMap('bayanaul')" class="p-3.5 bg-[#F9F8F5] hover:bg-pink-50/70 border border-slate-200/80 hover:border-pink-200 rounded-2xl flex justify-between items-center transition cursor-pointer group shadow-xs">
-                <div class="flex items-center gap-2.5">
-                  <span class="w-6 h-6 rounded-full bg-white text-[#F24469] flex items-center justify-center font-black text-[11px] shadow-xs border border-pink-100 shrink-0">4</span>
-                  <div>
-                    <span class="font-black text-[#002855] block">мкр-н Баянауыл, 56</span>
-                    <span class="text-[11px] text-slate-500">Ауэзовский р-н (Толе би — Яссауи — бассейн, соль)</span>
-                  </div>
-                </div>
-                <div class="flex items-center gap-2">
-                  <span class="text-[11px] font-bold text-slate-400 group-hover:text-[#F24469] transition hidden sm:inline">На карте</span>
-                  <a href="https://2gis.kz/almaty/search/Алматы%20микрорайон%20Баянаул%2056%20детский%20сад%20Зайка" target="_blank" onclick="event.stopPropagation();" class="px-2.5 py-1 rounded-lg bg-sky-100 hover:bg-[#00B4D8] text-[#00B4D8] hover:text-white font-extrabold text-[10px] transition">2GIS</a>
-                </div>
-              </div>
-
-              <div onclick="focusBranchMap('hodzhanova')" class="p-3.5 bg-[#F9F8F5] hover:bg-pink-50/70 border border-slate-200/80 hover:border-pink-200 rounded-2xl flex justify-between items-center transition cursor-pointer group shadow-xs">
-                <div class="flex items-center gap-2.5">
-                  <span class="w-6 h-6 rounded-full bg-white text-[#F24469] flex items-center justify-center font-black text-[11px] shadow-xs border border-pink-100 shrink-0">5</span>
-                  <div>
-                    <span class="font-black text-[#002855] block">ул. Ходжанова, 5В, к. 1</span>
-                    <span class="text-[11px] text-slate-500">Бостандыкский р-н (ЖК Rams Luxury, Аль-Фараби)</span>
-                  </div>
-                </div>
-                <div class="flex items-center gap-2">
-                  <span class="text-[11px] font-bold text-slate-400 group-hover:text-[#F24469] transition hidden sm:inline">На карте</span>
-                  <a href="https://2gis.kz/almaty/search/Алматы%20Ходжанова%205в%20Rams%20Luxury%20детский%20сад%20Зайка" target="_blank" onclick="event.stopPropagation();" class="px-2.5 py-1 rounded-lg bg-sky-100 hover:bg-[#00B4D8] text-[#00B4D8] hover:text-white font-extrabold text-[10px] transition">2GIS</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Форма записи на экскурсию -->
-        <div class="lg:col-span-6 bg-[#F9F8F5] rounded-3xl p-8 border border-[#E8E5DD]">
-          <h3 class="text-xl font-black text-[#002855] mb-2">Запись на экскурсию в любой филиал</h3>
-          <p class="text-xs text-slate-500 mb-6">Заполните форму, и мы свяжемся с вами в течение 10 минут</p>
-
-          <form onsubmit="event.preventDefault(); openTourModal();" class="space-y-4">
+          <!-- ПОДБЛОК 2: ФОРМА ЗАПИСИ НА ЭКСКУРСИЮ (lg:col-span-6) -->
+          <div class="lg:col-span-6 p-6 sm:p-8 lg:p-10 bg-[#F9F8F5] flex flex-col justify-between space-y-4">
             <div>
-              <label class="block text-xs font-bold text-slate-700 mb-1">Ваше имя</label>
-              <input type="text" placeholder="Имя родителя" required class="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-xs font-medium focus:ring-2 focus:ring-[#F24469]">
-            </div>
-            <div>
-              <label class="block text-xs font-bold text-slate-700 mb-1">Телефон *</label>
-              <input type="tel" placeholder="+7 (7XX) XXX-XX-XX" required class="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-xs font-medium focus:ring-2 focus:ring-[#F24469]">
-            </div>
-            <div>
-              <label class="block text-xs font-bold text-slate-700 mb-1">Желаемый филиал</label>
-              <select class="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-xs font-bold text-[#002855]">
-                <option>Филиал №1: ул. Маркова, 9</option>
-                <option>Филиал №2: ул. Аманжол, 6 (бассейн, соль)</option>
-                <option>Филиал №3: ул. Кожамкулова, 149 (Есентай)</option>
-                <option>Филиал №4: мкр. Баянаул, 56 (бассейн, соль)</option>
-                <option>Филиал №5: ул. Ходжанова, 5в (Rams Luxury)</option>
-              </select>
-            </div>
-            <button type="submit" class="b-btn b-btn_pink w-full py-4 text-xs sm:text-sm font-extrabold shadow-lg">
-              <span>Записаться прямо сейчас</span>
-            </button>
-          </form>
-        </div>
-
-      </div>
-
-      <!-- =========================================================================
-           ИНТЕРАКТИВНАЯ КАРТА 5 ФИЛИАЛОВ (С ПЕРЕКЛЮЧЕНИЕМ И ССЫЛКАМИ 2GIS И ЯНДЕКС)
-           ========================================================================= -->
-      <div id="branch-map-section" class="mt-14 bg-white rounded-3xl border border-[#E8E5DD] shadow-sm overflow-hidden">
-        
-        <!-- Шапка блока карты -->
-        <div class="p-6 sm:p-8 border-b border-slate-100 flex flex-col lg:flex-row lg:items-center justify-between gap-5 bg-gradient-to-r from-white via-white to-emerald-50/30">
-          <div>
-            <div class="flex items-center gap-2.5">
-              <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#E8F5E9] text-base border border-emerald-200 shadow-xs">
-                🐰
+              <span class="text-[11px] font-black uppercase tracking-wider text-emerald-600 flex items-center gap-1.5 mb-1">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Бесплатная индивидуальная экскурсия
               </span>
               <h3 class="text-xl sm:text-2xl font-black text-[#002855] tracking-tight">
-                Все 5 филиалов сети «ЗАЙКА» на карте 2ГИС
+                Запись на просмотр садика
               </h3>
+              <p class="text-slate-500 text-xs sm:text-sm mt-0.5">
+                Покажем бассейн, соляную шахту, спальни и познакомим с педагогами
+              </p>
             </div>
-            <p class="text-xs sm:text-sm text-slate-500 mt-1">
-              Официальная карта 2ГИС Алматы: кликните по зайчику, чтобы посмотреть фотографии филиала, бассейн, соляную шахту и построить маршрут
-            </p>
+
+            <form onsubmit="event.preventDefault(); openTourModal();" class="space-y-3">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-[11px] font-bold text-slate-600 mb-1">Ваше имя</label>
+                  <input type="text" placeholder="Имя родителя" required class="w-full px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-xs font-medium focus:ring-2 focus:ring-[#F24469] focus:outline-none shadow-xs">
+                </div>
+                <div>
+                  <label class="block text-[11px] font-bold text-slate-600 mb-1">Номер телефона *</label>
+                  <input type="tel" placeholder="+7 (7XX) XXX-XX-XX" required class="w-full px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-xs font-medium focus:ring-2 focus:ring-[#F24469] focus:outline-none shadow-xs">
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-[11px] font-bold text-slate-600 mb-1">Желаемый филиал</label>
+                <select class="w-full px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-xs font-bold text-[#002855] focus:ring-2 focus:ring-[#F24469] focus:outline-none shadow-xs">
+                  <option>Филиал №1: ул. Маркова, 9 (Бостандыкский)</option>
+                  <option>Филиал №2: ул. Аманжол, 6 (бассейн, соль)</option>
+                  <option>Филиал №3: ул. Кожамкулова, 149 (Есентай)</option>
+                  <option>Филиал №4: мкр. Баянаул, 56 (бассейн, соль)</option>
+                  <option>Филиал №5: ул. Ходжанова, 5В (Rams Luxury)</option>
+                </select>
+              </div>
+
+              <button type="submit" class="b-btn b-btn_pink w-full py-3.5 text-xs sm:text-sm font-extrabold shadow-md hover:shadow-lg transition">
+                <span>Записаться прямо сейчас</span>
+              </button>
+
+              <p class="text-[10px] text-slate-400 text-center">
+                🔒 Заведующая перезвонит в течение 10 минут в рабочее время
+              </p>
+            </form>
           </div>
 
-          <!-- Табы переключения: Интерактивная карта 2ГИС с зайчиками / Яндекс.Карты -->
-          <div class="flex items-center gap-2 bg-[#F9F8F5] p-1.5 rounded-2xl border border-slate-200 shrink-0">
-            <button id="btn-map-interactive" onclick="switchMapMode('interactive')" class="flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition shadow-sm bg-white text-[#002855]">
-              <span class="w-2.5 h-2.5 rounded-full bg-[#00A86B] shadow-xs"></span>
-              <span>2ГИС (Интерактивная)</span>
-            </button>
-            <button id="btn-map-yandex" onclick="switchMapMode('yandex')" class="flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition text-slate-500 hover:text-[#002855]">
-              <span>🗺️</span>
-              <span>Яндекс.Карты</span>
-            </button>
-          </div>
         </div>
 
-        <!-- Быстрые фильтры-кнопки по филиалам прямо над картой -->
-        <div class="px-6 py-3.5 bg-[#F9F8F5]/80 border-b border-slate-200/80 flex flex-wrap items-center gap-2">
-          <span class="text-[11px] font-black uppercase tracking-wider text-slate-400 mr-1 flex items-center gap-1">
-            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-[#F24469]"></i>
-            Филиал:
-          </span>
-          <button onclick="focusBranchMap('all')" data-branch-pill="all" class="map-branch-pill px-3.5 py-1.5 rounded-xl text-xs font-bold bg-[#002855] text-white shadow-xs transition">
-            Все сады (5)
-          </button>
-          <button onclick="focusBranchMap('markova')" data-branch-pill="markova" class="map-branch-pill px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-700 hover:bg-pink-50 hover:text-[#F24469] border border-slate-200 transition">
-            №1 Маркова, 9
-          </button>
-          <button onclick="focusBranchMap('amanzhol')" data-branch-pill="amanzhol" class="map-branch-pill px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-700 hover:bg-pink-50 hover:text-[#F24469] border border-slate-200 transition">
-            №2 Аманжол, 6 (бассейн, соль)
-          </button>
-          <button onclick="focusBranchMap('kozhamkulova')" data-branch-pill="kozhamkulova" class="map-branch-pill px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-700 hover:bg-pink-50 hover:text-[#F24469] border border-slate-200 transition">
-            №3 Кожамкулова, 149 (Есентай)
-          </button>
-          <button onclick="focusBranchMap('bayanaul')" data-branch-pill="bayanaul" class="map-branch-pill px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-700 hover:bg-pink-50 hover:text-[#F24469] border border-slate-200 transition">
-            №4 Баянаул, 56 (бассейн, соль)
-          </button>
-          <button onclick="focusBranchMap('hodzhanova')" data-branch-pill="hodzhanova" class="map-branch-pill px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-700 hover:bg-pink-50 hover:text-[#F24469] border border-slate-200 transition">
-            №5 Ходжанова, 5В (Rams)
-          </button>
-        </div>
-
-        <!-- Контейнер карты -->
-        <div class="relative w-full h-[480px] sm:h-[560px] bg-slate-100 overflow-hidden">
+        <!-- ПОДБЛОК 3: ИНТЕРАКТИВНАЯ КАРТА 2ГИС (НА ВСЮ ШИРИНУ ПОД НИМИ) -->
+        <div id="branch-map-section" class="w-full">
           
-          <!-- Leaflet интерактивная карта с тайлами 2ГИС Алматы -->
-          <div id="interactive-map" class="w-full h-full z-10"></div>
+          <!-- Панель фильтрации филиалов над картой -->
+          <div class="px-6 py-3.5 bg-white border-b border-slate-200/80 flex flex-wrap items-center justify-between gap-3">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="text-[11px] font-black uppercase tracking-wider text-slate-400 mr-1 flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-[#F24469]"></i>
+                Филиал:
+              </span>
+              <button onclick="focusBranchMap('all')" data-branch-pill="all" class="map-branch-pill px-3 py-1.5 rounded-xl text-xs font-bold bg-[#002855] text-white shadow-xs transition">
+                Все сады (5)
+              </button>
+              <button onclick="focusBranchMap('markova')" data-branch-pill="markova" class="map-branch-pill px-3 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-700 hover:bg-pink-50 hover:text-[#F24469] border border-slate-200 transition">
+                №1 Маркова, 9
+              </button>
+              <button onclick="focusBranchMap('amanzhol')" data-branch-pill="amanzhol" class="map-branch-pill px-3 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-700 hover:bg-pink-50 hover:text-[#F24469] border border-slate-200 transition">
+                №2 Аманжол, 6
+              </button>
+              <button onclick="focusBranchMap('kozhamkulova')" data-branch-pill="kozhamkulova" class="map-branch-pill px-3 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-700 hover:bg-pink-50 hover:text-[#F24469] border border-slate-200 transition">
+                №3 Кожамкулова, 149
+              </button>
+              <button onclick="focusBranchMap('bayanaul')" data-branch-pill="bayanaul" class="map-branch-pill px-3 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-700 hover:bg-pink-50 hover:text-[#F24469] border border-slate-200 transition">
+                №4 Баянаул, 56
+              </button>
+              <button onclick="focusBranchMap('hodzhanova')" data-branch-pill="hodzhanova" class="map-branch-pill px-3 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-700 hover:bg-pink-50 hover:text-[#F24469] border border-slate-200 transition">
+                №5 Ходжанова, 5В
+              </button>
+            </div>
 
-          <!-- Яндекс Карта (iframe виджет с 5 метками) -->
-          <div id="yandex-map-container" class="w-full h-full absolute inset-0 hidden z-20 bg-slate-100">
-            <iframe id="yandex-map-iframe" src="" class="w-full h-full border-0" allowfullscreen="true" loading="lazy"></iframe>
+            <!-- Табы переключения карт 2ГИС / Яндекс -->
+            <div class="flex items-center gap-1.5 bg-[#F9F8F5] p-1 rounded-xl border border-slate-200 shrink-0">
+              <button id="btn-map-interactive" onclick="switchMapMode('interactive')" class="flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-bold transition shadow-xs bg-white text-[#002855]">
+                <span class="w-2 h-2 rounded-full bg-[#00A86B]"></span>
+                <span>2ГИС</span>
+              </button>
+              <button id="btn-map-yandex" onclick="switchMapMode('yandex')" class="flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-bold transition text-slate-500 hover:text-[#002855]">
+                <span>🗺️</span>
+                <span>Яндекс.Карты</span>
+              </button>
+            </div>
           </div>
 
-        </div>
+          <!-- Контейнер интерактивной карты -->
+          <div class="relative w-full h-[460px] sm:h-[540px] bg-slate-100 overflow-hidden">
+            <!-- Leaflet интерактивная карта с тайлами 2ГИС Алматы -->
+            <div id="interactive-map" class="w-full h-full z-10"></div>
 
-        <!-- Нижняя плашка карты с кнопками 2GIS и Яндекс -->
-        <div class="p-4 sm:p-6 bg-slate-50 border-t border-slate-200/80 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div class="flex items-center gap-2.5 text-xs text-slate-600 font-medium">
-            <span class="w-2 h-2 rounded-full bg-emerald-500 shrink-0"></span>
-            <span>Постройте точный маршрут на авто, автобусе или пешком в мобильных приложениях:</span>
+            <!-- Яндекс Карта (iframe виджет с 5 метками) -->
+            <div id="yandex-map-container" class="w-full h-full absolute inset-0 hidden z-20 bg-slate-100">
+              <iframe id="yandex-map-iframe" src="" class="w-full h-full border-0" allowfullscreen="true" loading="lazy"></iframe>
+            </div>
           </div>
 
-          <div class="flex flex-wrap items-center gap-3">
-            <a href="https://2gis.kz/almaty/search/детский%20сад%20Зайка" target="_blank" class="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#00A86B] hover:bg-[#008f5a] text-white text-xs font-bold shadow-sm transition">
-              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              <span>Открыть всю сеть в 2ГИС</span>
-              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-            </a>
+          <!-- Нижняя плашка карты с кнопками мобильных приложений -->
+          <div class="p-4 sm:p-5 bg-white border-t border-slate-200/80 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2 text-xs text-slate-600 font-medium">
+              <span class="w-2 h-2 rounded-full bg-[#00A86B] shrink-0"></span>
+              <span>Кликните по зайчику для просмотра фото или откройте маршрут в навигаторе:</span>
+            </div>
 
-            <a href="https://yandex.kz/maps/162/almaty/search/детский%20сад%20Зайка" target="_blank" class="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#FC3F1D] hover:bg-[#E03212] text-white text-xs font-bold shadow-sm transition">
-              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              <span>В Яндекс.Картах</span>
-              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-            </a>
+            <div class="flex flex-wrap items-center gap-3">
+              <a href="https://2gis.kz/almaty/search/детский%20сад%20Зайка" target="_blank" class="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#00A86B] hover:bg-[#008f5a] text-white text-xs font-bold shadow-sm transition">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span>Открыть всю сеть в 2ГИС</span>
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              </a>
+
+              <a href="https://yandex.kz/maps/162/almaty/search/детский%20сад%20Зайка" target="_blank" class="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#FC3F1D] hover:bg-[#E03212] text-white text-xs font-bold shadow-sm transition">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span>В Яндекс.Картах</span>
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
           </div>
+
         </div>
 
       </div>
 
     </div>
   </section>
+
 
 
   <!-- =========================================================================
