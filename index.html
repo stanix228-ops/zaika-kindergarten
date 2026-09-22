@@ -52,19 +52,20 @@
   <!-- =========================================================================
        1. ВЕРХНЯЯ СТРОКА (ИНФО И КОНТАКТЫ КАК В SUN SCHOOL)
        ========================================================================= -->
-  <header class="bg-white border-b border-[#E8E5DD] sticky top-0 z-40 transition-all">
+  <header class="bg-white border-b border-[#E8E5DD] sticky top-0 z-40 transition-all shadow-[0_4px_20px_-4px_rgba(0,40,85,0.03)]">
     
     <!-- Верхний служебный ряд -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 border-b border-slate-100 hidden md:flex items-center justify-between text-xs">
-      <div class="flex items-center gap-6 text-slate-500 font-medium">
+    <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 py-2.5 border-b border-slate-100 hidden md:flex items-center justify-between text-xs">
+      <div class="flex items-center gap-5 text-slate-500 font-medium">
         <span class="flex items-center gap-1.5 text-[#002855] font-bold">
           <i data-lucide="map-pin" class="w-3.5 h-3.5 text-[#F24469]"></i>
-          <span>Ваш город: <b>Алматы</b> (5 филиалов)</span>
+          <span>г. Алматы (5 филиалов)</span>
         </span>
-        <span>Пн – Пт: 07:30 – 19:00 (дежурная группа до 20:00)</span>
+        <span class="text-slate-300">•</span>
+        <span>Режим: Пн – Пт: 07:30 – 19:00</span>
       </div>
 
-      <div class="flex items-center gap-5">
+      <div class="flex items-center gap-6">
         <a href="https://wa.me/77001360606" target="_blank" class="flex items-center gap-1.5 text-emerald-600 font-bold hover:underline">
           <i data-lucide="message-circle" class="w-4 h-4"></i>
           <span>WhatsApp администратора</span>
@@ -80,48 +81,49 @@
       </div>
     </div>
 
-    <!-- Основная шапка с логотипом и кнопками -->
-    <!-- Основная шапка с логотипом и кнопками -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20 gap-3 xl:gap-6">
+    <!-- Основная шапка с логотипом, центрированной навигацией и кнопками -->
+    <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10">
+      <div class="flex items-center justify-between h-20 gap-4">
         
-        <!-- Логотип в стиле Sun School -->
-        <a href="#" class="flex items-center gap-2.5 shrink-0">
-          <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-white flex items-center justify-center shadow-sm overflow-hidden border-2 border-pink-200 shrink-0 p-1">
-            <img src="images/zaika_logo.png" alt="Логотип Зайка" class="w-full h-full object-contain">
-          </div>
-          <div class="shrink-0">
-            <div class="flex items-center gap-1.5">
-              <span class="text-xl sm:text-2xl font-black tracking-tight text-[#002855] leading-none">ЗАЙКА</span>
-              <span class="text-[9px] font-extrabold uppercase px-1.5 py-0.5 bg-[#FDF0F3] text-[#F24469] rounded-md border border-[#F24469]/20 leading-none">KIDS</span>
+        <!-- 1. Левая колонка: Логотип (прижат влево) -->
+        <div class="flex items-center justify-start shrink-0">
+          <a href="#" class="flex items-center gap-2.5">
+            <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-white flex items-center justify-center shadow-sm overflow-hidden border-2 border-pink-200 shrink-0 p-1">
+              <img src="images/zaika_logo.png" alt="Логотип Зайка" class="w-full h-full object-contain">
             </div>
-            <p class="text-[10px] sm:text-[11px] text-slate-500 font-semibold mt-0.5 whitespace-nowrap">Сеть частных детских садов</p>
-          </div>
-        </a>
+            <div class="shrink-0">
+              <div class="flex items-center gap-1.5 leading-none">
+                <span class="text-xl sm:text-2xl font-black tracking-tight text-[#002855]">ЗАЙКА</span>
+                <span class="text-[9px] font-extrabold uppercase px-1.5 py-0.5 bg-[#FDF0F3] text-[#F24469] rounded-md border border-[#F24469]/20">KIDS</span>
+              </div>
+              <p class="text-[10px] sm:text-[11px] text-slate-500 font-semibold mt-1 whitespace-nowrap">Сеть частных детских садов</p>
+            </div>
+          </a>
+        </div>
 
-        <!-- Навигация (Desktop) -->
-        <nav class="hidden lg:flex items-center gap-3 xl:gap-5 text-[11px] xl:text-xs font-bold uppercase tracking-wider text-[#002855] whitespace-nowrap">
-          <a href="#chooseKindergarten" class="hover:text-[#F24469] transition">Филиалы</a>
-          <a href="#about" class="hover:text-[#F24469] transition">О садах</a>
-          <a href="#abc" class="hover:text-[#F24469] transition">Концепция ABC</a>
-          <a href="#calculator" class="hover:text-[#F24469] transition">Гос. ваучер</a>
-          <a href="#stocks" class="hover:text-[#F24469] transition">Акции</a>
-          <button onclick="openModal('modal-menu')" class="hover:text-[#F24469] transition">Меню</button>
-          <button onclick="openModal('modal-schedule')" class="hover:text-[#F24469] transition">Распорядок</button>
-          <a href="#reviews" class="hover:text-[#F24469] transition hidden 2xl:inline-block">Отзывы</a>
-          <a href="#contacts" class="hover:text-[#F24469] transition">Контакты</a>
+        <!-- 2. Центральная колонка: Навигация (СТРОГО ПО ЦЕНТРУ, РАВНОМЕРНОЕ РАСПРЕДЕЛЕНИЕ) -->
+        <nav class="hidden lg:flex items-center justify-center flex-1 mx-2 xl:mx-4 gap-1 xl:gap-2">
+          <a href="#chooseKindergarten" class="px-2.5 py-1.5 rounded-xl text-xs font-bold text-[#002855] hover:text-[#F24469] hover:bg-pink-50/70 transition whitespace-nowrap">Филиалы</a>
+          <a href="#about" class="px-2.5 py-1.5 rounded-xl text-xs font-bold text-[#002855] hover:text-[#F24469] hover:bg-pink-50/70 transition whitespace-nowrap">О садах</a>
+          <a href="#abc" class="px-2.5 py-1.5 rounded-xl text-xs font-bold text-[#002855] hover:text-[#F24469] hover:bg-pink-50/70 transition whitespace-nowrap">Концепция ABC</a>
+          <a href="#calculator" class="px-2.5 py-1.5 rounded-xl text-xs font-bold text-[#002855] hover:text-[#F24469] hover:bg-pink-50/70 transition whitespace-nowrap">Гос. ваучер</a>
+          <a href="#stocks" class="px-2.5 py-1.5 rounded-xl text-xs font-bold text-[#002855] hover:text-[#F24469] hover:bg-pink-50/70 transition whitespace-nowrap">Акции</a>
+          <button onclick="openModal('modal-menu')" class="px-2.5 py-1.5 rounded-xl text-xs font-bold text-[#002855] hover:text-[#F24469] hover:bg-pink-50/70 transition whitespace-nowrap">Меню</button>
+          <button onclick="openModal('modal-schedule')" class="px-2.5 py-1.5 rounded-xl text-xs font-bold text-[#002855] hover:text-[#F24469] hover:bg-pink-50/70 transition whitespace-nowrap">Распорядок</button>
+          <a href="#reviews" class="px-2.5 py-1.5 rounded-xl text-xs font-bold text-[#002855] hover:text-[#F24469] hover:bg-pink-50/70 transition whitespace-nowrap">Отзывы</a>
+          <a href="#contacts" class="px-2.5 py-1.5 rounded-xl text-xs font-bold text-[#002855] hover:text-[#F24469] hover:bg-pink-50/70 transition whitespace-nowrap">Контакты</a>
         </nav>
 
-        <!-- Телефон и кнопки в стиле Sun School -->
-        <div class="hidden sm:flex items-center gap-2.5 xl:gap-3 shrink-0">
-          <div class="text-right hidden xl:block shrink-0">
+        <!-- 3. Правая колонка: Телефон и кнопки (прижаты вправо, сбалансированы) -->
+        <div class="hidden lg:flex items-center justify-end shrink-0 gap-2.5 xl:gap-3">
+          <div class="text-right hidden 2xl:block shrink-0 leading-tight">
             <a href="tel:+77001360606" class="text-sm font-black text-[#002855] hover:text-[#F24469] transition whitespace-nowrap block">
               +7 700 136 06 06
             </a>
             <span class="text-[10px] text-slate-400 block font-medium whitespace-nowrap">Бесплатно по Алматы</span>
           </div>
 
-          <button onclick="openModal('modal-callback')" class="b-btn b-btn_pinkPrimary px-3.5 py-2 text-xs font-bold shrink-0 whitespace-nowrap">
+          <button onclick="openModal('modal-callback')" class="hidden xl:inline-flex b-btn b-btn_pinkPrimary px-3.5 py-2 text-xs font-bold shrink-0 whitespace-nowrap">
             <span>Заказать звонок</span>
           </button>
 
@@ -130,7 +132,7 @@
           </button>
         </div>
 
-        <!-- Мобильная кнопка -->
+        <!-- Мобильная кнопка (< lg) -->
         <div class="lg:hidden flex items-center gap-2 shrink-0">
           <button onclick="openTourModal()" class="b-btn b-btn_pink px-3 py-1.5 text-xs font-bold whitespace-nowrap">
             Записаться
@@ -150,6 +152,8 @@
       <a href="#abc" class="block text-slate-700 font-bold text-sm py-1">Концепция развития ABC</a>
       <a href="#calculator" class="block text-slate-700 font-bold text-sm py-1">Калькулятор гос. ваучера</a>
       <a href="#stocks" class="block text-slate-700 font-bold text-sm py-1">Акции и скидки</a>
+      <a href="#reviews" class="block text-slate-700 font-bold text-sm py-1">Отзывы родителей 2ГИС</a>
+      <a href="#contacts" class="block text-slate-700 font-bold text-sm py-1">Контакты и филиалы</a>
       <div class="grid grid-cols-2 gap-2 pt-2">
         <button onclick="openModal('modal-menu')" class="py-2.5 px-3 bg-slate-100 rounded-xl font-bold text-xs text-slate-700 text-left">
           🍲 5-разовое Меню
